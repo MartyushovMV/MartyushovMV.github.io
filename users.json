@@ -1,0 +1,113 @@
+{
+
+	  "UserStats": [
+
+	    {
+
+	      "id": 2,
+
+	      "userURL": "https://accounts.zap.ru/max",
+
+	      "userAvatarURL": "userid2",
+
+	      "registrationDate": "10.11.12",
+
+	      "friends": "84",
+
+	      "comments": "26",
+
+	      "rank": "4,7",
+
+	      "timeLastActivities": "5 days ago"
+
+	    },
+
+	    {
+
+	      "id": 5,
+
+	      "userURL": "https://accounts.zap.ru/dvink",
+
+	      "userAvatarURL": "userid5",
+
+	      "registrationDate": "28.06.14",
+
+	      "friends": "15",
+
+	      "comments": "2",
+
+	      "rank": "3,5",
+
+	      "timeLastActivities": "3 days ago"
+
+	    },
+
+	    {
+
+	      "id": 6,
+
+	      "userURL": "https://accounts.zap.ru/louisp",
+
+	      "userAvatarURL": "userid6",
+
+	      "registrationDate": "15.03.13",
+
+	      "friends": "51",
+
+	      "comments": "6",
+
+	      "rank": "3,8",
+
+	      "timeLastActivities": "7 days ago"
+
+	    },
+
+	    {
+
+	      "id": 7,
+
+	      "userURL": "https://accounts.zap.ru/paunt",
+
+	      "userAvatarURL": "userid7",
+
+	      "registrationDate": "23.08.15",
+
+	      "friends": "12",
+
+	      "comments": "17",
+
+	      "rank": "4,1",
+
+	      "timeLastActivities": "1 days ago"
+
+	    },
+
+	    {
+
+	      "id": 9,
+
+	      "userURL": "https://accounts.zap.ru/frank",
+
+	      "userAvatarURL": "userid9",
+
+	      "registrationDate": "23.09.14",
+
+	      "friends": "23",
+
+	      "comments": "11",
+
+	      "rank": "4,4",
+
+	      "timeLastActivities": "6 days ago"
+
+	    }
+
+	  		],
+
+	      "disabledUsers": [
+				"https://accounts.zap.ru/threw",
+				"https://accounts.zap.ru/coolman", 
+				"https://accounts.zap.ru/brain"
+                               ]
+
+}
