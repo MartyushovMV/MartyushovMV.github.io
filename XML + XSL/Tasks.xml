@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="Tasks.xsl" type="text/xsl"?>
+<main>
+ <title>The List of Tasks</title>
+ <description>Look around! There may be a lot of tasks for you!</description>
+ <tasks>
+  <task id="t1">
+     <title>Visit the website</title>
+     <description>You should visit the website and gradiently scroll main page for 2-3 minutes</description>
+     <MembersNeed>100</MembersNeed>
+	 <MembersNow>18</MembersNow>
+     <completion level="8">Almost complete</completion>
+     <requirements>
+      <item val="low">Rank more than 2</item>
+      <item val="high">Not be mentioned in the blacklist</item>
+    </requirements>
+  </task>
+  <task id="t2">
+	 <title>Make a feedback</title>
+     <description>Write a little positive feedback about our company</description>
+	 <MembersNeed>15</MembersNeed>
+	 <MembersNow>3</MembersNow>
+     <completion level="3">There are a lot of things to do</completion>
+	 <requirements>
+      <item val="low">Rank more than 3</item>
+      <item val="high">Have the account on IRecommend.ru</item>
+    </requirements>
+  </task>
+ </tasks>
+</main>

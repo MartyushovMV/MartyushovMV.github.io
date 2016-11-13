@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 10px;
+	background: gold;
+	border-radius: 10px;
+	height: 100%;
+}
+
+
+.flex-item {
+	margin: 10px;
+	padding: 5px;
+	background: lightgray;
+	border-radius: 5px;
+	border: 1px 
+	solid #FFF;
+}
