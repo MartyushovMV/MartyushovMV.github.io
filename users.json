@@ -6,9 +6,11 @@
 
 	      "id": 2,
 
-	      "userURL": "https://accounts.zap.ru/max",
+	      "userName": "Max",
 
 	      "userAvatarURL": "userid2",
+
+	      "userGroup": "Moderators",
 
 	      "registrationDate": "10.11.12",
 
@@ -26,9 +28,11 @@
 
 	      "id": 5,
 
-	      "userURL": "https://accounts.zap.ru/dvink",
+	      "userName": "Dvink",
 
 	      "userAvatarURL": "userid5",
+
+	      "userGroup": "Users",
 
 	      "registrationDate": "28.06.14",
 
@@ -46,9 +50,11 @@
 
 	      "id": 6,
 
-	      "userURL": "https://accounts.zap.ru/louisp",
+	      "userName": "Louisp",
 
 	      "userAvatarURL": "userid6",
+
+	      "userGroup": "Users",
 
 	      "registrationDate": "15.03.13",
 
@@ -66,9 +72,11 @@
 
 	      "id": 7,
 
-	      "userURL": "https://accounts.zap.ru/paunt",
+	      "userName": "Paunt",
 
 	      "userAvatarURL": "userid7",
+
+	      "userGroup": "Users",
 
 	      "registrationDate": "23.08.15",
 
@@ -78,7 +86,7 @@
 
 	      "rank": "4,1",
 
-	      "timeLastActivities": "1 days ago"
+	      "timeLastActivities": "2 days ago"
 
 	    },
 
@@ -86,9 +94,11 @@
 
 	      "id": 9,
 
-	      "userURL": "https://accounts.zap.ru/frank",
+	      "userName": "Frank",
 
 	      "userAvatarURL": "userid9",
+
+	      "userGroup": "Users",
 
 	      "registrationDate": "23.09.14",
 
@@ -105,9 +115,9 @@
 	  		],
 
 	      "disabledUsers": [
-				"https://accounts.zap.ru/threw",
-				"https://accounts.zap.ru/coolman", 
-				"https://accounts.zap.ru/brain"
+				"https://zap.ru/users/Threw",
+				"https://zap.ru/users/Coolman", 
+				"https://zap.ru/users/Brain"
                                ]
 
 }
