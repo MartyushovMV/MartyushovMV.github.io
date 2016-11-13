@@ -1,5 +1,5 @@
 ﻿$.ajax({
-  url: '../users.json',
+  url: '//martyushovmv.github.io/Ajax_json/users.json',
   dataType: 'json',
   type: 'get',
   cache: 'false',
