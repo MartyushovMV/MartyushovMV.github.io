@@ -1,5 +1,5 @@
 ﻿$.ajax({
-  url: 'users.json',
+  url: '../users.json',
   dataType: 'json',
   type: 'get',
   cache: 'false',
