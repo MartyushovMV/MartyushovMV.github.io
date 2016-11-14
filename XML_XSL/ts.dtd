@@ -1,0 +1,16 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<!ELEMENT main (title,description,tasks)>
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT description (#PCDATA) >
+<!ELEMENT tasks (task+) >
+<!ELEMENT task (title,description,MembersNeed,MembersNow,completion,requirements) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT description (#PCDATA) >
+<!ELEMENT MembersNeed (#PCDATA) >
+<!ELEMENT MembersNow (#PCDATA) >
+<!ELEMENT completion (#PCDATA) >
+<!ELEMENT requirements (item+) >
+<!ATTLIST task id CDATA #REQUIRED >
+<!ELEMENT item (#PCDATA) >
+<!ATTLIST item val CDATA #REQUIRED >

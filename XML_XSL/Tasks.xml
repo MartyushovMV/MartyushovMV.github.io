@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="Tasks.xsl" type="text/xsl"?>
-<main>
+ <!DOCTYPE Tasks SYSTEM "ts.dtd"> <main>
  <title>The List of Tasks</title>
  <description>Look around! There may be a lot of tasks for you!</description>
  <tasks>
