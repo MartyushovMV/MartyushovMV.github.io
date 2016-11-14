@@ -1,0 +1,10 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<!ELEMENT PlayList (Track+)>
+<!ELEMENT Track (Artist, Title)>
+<!ELEMENT Artist (#PCDATA) >
+<!ELEMENT Title (#PCDATA) >
+<!ATTLIST Track Id CDATA #REQUIRED >
+<!ATTLIST Track Bitrate CDATA #REQUIRED >
+<!ELEMENT Artist (#PCDATA) >
+<!ELEMENT Title (#PCDATA) >
