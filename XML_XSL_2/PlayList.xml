@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='PlayList.xsl'?>
+<PlayList>
+  <Track Id="1170056tuNb" Bitrate="192">
+    <Artist>Bon Jovi</Artist>
+    <Title>It's My Life</Title>
+  </Track>
+  <Track Id="938304vu1E" Bitrate="128">
+    <Artist>Darkseed</Artist>
+    <Title>Downwards</Title>
+  </Track>
+  <Track Id="35532014SEz" Bitrate="224">
+    <Artist>Snow Patrol</Artist>
+    <Title>Run</Title>
+  </Track>
+  <Track Id="264667GXiD" Bitrate="256">
+    <Artist>Ignite</Artist>
+    <Title>Bleeding</Title>
+  </Track>
+  <Track Id="613982Fj9E" Bitrate="320">
+    <Artist>Rise Against</Artist>
+    <Title>Give It All</Title>
+  </Track>
+    <Track Id="1177794tiNk" Bitrate="256">
+    <Artist>Linkin Park</Artist>
+    <Title>In The End</Title>
+  </Track>
+  <Track Id="938708to1E" Bitrate="128">
+    <Artist>A Place In Time</Artist>
+    <Title>Telephone Lines</Title>
+  </Track>
+  <Track Id="35538126SEr" Bitrate="192">
+    <Artist>No Motiv</Artist>
+    <Title>Independance Day</Title>
+  </Track>
+  <Track Id="291947GXyD" Bitrate="320">
+    <Artist>Trust Company</Artist>
+    <Title>The War Is Over</Title>
+  </Track>
+  <Track Id="672352Fv9E" Bitrate="128">
+    <Artist>Man Overboard</Artist>
+    <Title>Decemberism</Title>
+  </Track>
+    <Track Id="672884Fp5E" Bitrate="256">
+    <Artist>Motorama</Artist>
+    <Title>Wind In Her Hair</Title>
+  </Track>
+</PlayList>
