@@ -31,7 +31,7 @@
 
  <xsl:template match="tasks">
    <div style="clear:both;">
-     <h1>Tasks</h1>
+     <h1>Active tasks</h1>
      <xsl:apply-templates/>
    </div>
  </xsl:template>
@@ -41,7 +41,7 @@
  <xsl:template match="task">
    <div style="float:left;border-style:solid;margin:10px;padding:5px;width:300px">
      <!-- title -->
-     <p style="font-size:120%;">    
+     <p style="font-size:130%; font-weight:bold; background-color:#A2CD5A;">    
        <xsl:value-of select="count(preceding-sibling::*)+1"/>.
        <xsl:value-of select="title"/>
      </p>
