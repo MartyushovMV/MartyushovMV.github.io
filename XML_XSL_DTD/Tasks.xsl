@@ -48,8 +48,8 @@
 
      <!-- members and description -->
      <p>Executions required: <xsl:apply-templates select="MembersNeed"/></p>
-	 <p>Already executed:<xsl:apply-templates select="MembersNow"/> times</p>
-     <p><xsl:value-of select="description"/></p>
+	 <p>Already executed: <xsl:apply-templates select="MembersNow"/> times</p>
+     <p style="font-style: italic;"><xsl:value-of select="description"/></p>
 
      
      <!-- completion -->

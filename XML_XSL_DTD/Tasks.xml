@@ -6,7 +6,7 @@
  <tasks>
   <task id="t1">
      <title>Visit the website</title>
-     <description>You should visit the website and gradiently scroll main page for 2-3 minutes</description>
+     <description>You should visit the website and gradually scroll main page for 2-3 minutes</description>
      <MembersNeed>100</MembersNeed>
 	 <MembersNow>18</MembersNow>
      <completion level="8">Almost complete</completion>
