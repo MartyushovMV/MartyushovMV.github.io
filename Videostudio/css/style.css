@@ -303,7 +303,8 @@ font-size : 12px;
 
 .limit {
 	display : block;
-	height : 300px;
+	padding: 10px;
+	height : 465px;
 }
 
 .blue_button_add
