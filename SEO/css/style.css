@@ -1,28 +1,34 @@
+/* Тело сайта*/
 body{
   font-family: 'Nunito', sans-serif;
   color: #000;
   font-weight: 300;
 }
 
+/* Параграфы */
 p{
   font-size: 1.2em;
   font-weight: 400;
 }
 
+/* Ширина изображения логотипа*/
 .logo img{
   width: 200px;
 }
 
+/* Блок первого экрана */
 .hero-section{
   background: url("../images/header-bg.png") -400px 0 no-repeat;
   height: 700px;
 }
 
+/* Параграфы блока первого экрана */
 .hero-section .col-md-6 > p{
   margin-top: 30px;
   font-size: 1.3em!important;
 }
 
+/* Заголовок 3-го уровня для первого экрана */
 .hero-section h3{
   margin-top: 12em;
   color: #FFF;
@@ -30,6 +36,7 @@ p{
   font-weight: 100;
 }
 
+/* Заголовок 1-го уровня для первого экрана */
 .hero-section h1{
   font-weight: bold;
   color: #FFF;
@@ -37,7 +44,7 @@ p{
   margin-top: 0;
 }
 
-
+/* Навигационное меню */
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.19);
   height: 75px;
@@ -46,42 +53,51 @@ p{
   border-color: transparent;
 }
 
+/* Ссылки навигационного меню */
 .navbar-default .navbar-nav>li>a {
   font-size: 1em;
   margin-top: 10px;
   color: #fff;
 }
 
+/* Ссылки навигационного меню при наведении курсора */
 .navbar-default .navbar-nav>li>a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
+/* Высота блока с логотипом в навигационном меню */
 .navbar-header{
   height: 75px;
 }
 
+/* Отступы в навигационном меню */
 .navbar-collapse{
   padding: 0;
 }
 
+/* Цвет границ навигационного меню */
 .navbar-default .navbar-collapse{
   border-color: #000!important;
 }
 
+/* Отступы в списке ссылок навигационного меню */
 .navbar-nav{
   padding: 5px;
   margin: 0;
 }
 
+/* Цвет фона навигационного меню */
 .navbar-collapse.in{
   background: #000;
 }
 
+/* Отступ для переключателя меню (для мобильных устройств) */
 .navbar-toggle{
   margin-top: 20px;
 }
 
+/* Кнопка "Начать сейчас" */
 #cta-hero{
   background: #F37C3D;
   color: #fff;
@@ -92,34 +108,26 @@ p{
   font-size: 1.6em;
 }
 
+/* Контент тела сайта*/
 .body-content{
   background: #14355C;
   color: #fff;
 }
 
+/* Картинка с ноутбуком */
 .macbook-mockup{
   position: relative;
   top: 25px;
   margin: 0 auto;
 }
 
-.slider-content{
+/* Контент блоков "Внутреняя оптимизация" и "Внешняя оптимизация" */
+.block-content{
   margin-top: 100px;
   color: #4F4F4F;
 }
 
-.slider-nav{
-  float: left;
-  margin: 20px 0 0 0;
-  padding: 0;
-}
-
-.slider-nav li{
-  float: left;
-  list-style: none;
-  margin-right: 10px;
-}
-
+/* Блок с фреймом YouTube-видео */
 .thumb-wrap {
   position: relative;
   padding-bottom: 53%;
@@ -128,6 +136,7 @@ p{
   overflow: hidden;
 }
 
+/* Фрейм YouTube-видео */
 .thumb-wrap iframe {
   position: absolute;
   top: 0;
@@ -136,6 +145,7 @@ p{
   height: 80%;
 }
 
+/* Всплывающее окно */
 .b-popup{
     width:100%;
     min-height:100%;
@@ -146,6 +156,7 @@ p{
 	z-index: 10;
 }
 
+/* Содержимое всплывающего окна */
 .b-popup .b-popup-content{
     margin:40px auto 0px auto;
     width: 90%;
@@ -155,6 +166,7 @@ p{
     box-shadow: 0px 0px 10px #000;
 }
 
+/* Ссылки во всплывающем окне */
 .b-popup-content a {
 	color: #fff;
 	position: absolute;
@@ -162,23 +174,33 @@ p{
 	right: 75px;
 }
 
+/* Скрытие всплывающего окна */
+#popup1 {
+	display: none;
+}
+
+/* Блок для слайдера */
 .slider-box{
   position:relative;
   margin: auto;
-  width:720px;
-  height:405px;
+  width:760px;
+  height:410px;
   overflow:hidden;
 }
+
+/* Слайдер */
 .slider{
   position:relative;
   width:10000px;
   height:210px;
 }
 
+/* Картинки слайдера */
 .slider img{
   float:left;
 }
 
+/* Переключатели слайдера */
 .slider-box .prev, .slider-box .next{
   position:absolute;
   top:200px;
@@ -187,91 +209,71 @@ p{
   height:29px;
   cursor:pointer;
 }
+
+/* Кнопка слайдера "Назад" */
 .slider-box .prev{
-  left:-2px;
+  left:3px;
   background:url(../images/slider_controls.png) no-repeat 0 0;
 }
+
+/* Кнопка слайдера "Вперёд" */
 .slider-box .next{
-  right:-2px;
+  right:3px;
   background:url(../images/slider_controls.png) no-repeat -29px 0;
 }
 
-.slider-box1{
-  position:relative;
-  margin: auto;
-  width:640px;
-  height:370px;
-  overflow:hidden;
-}
-.slider1{
-  position:relative;
-  width:10000px;
-  height:210px;
-}
-
-.slider1 img{
-  float:left;
-}
-
-.slider-box1 .prev, .slider-box1 .next{
-  position:absolute;
-  top:200px;
-  display:block;
-  width:29px;
-  height:29px;
-  cursor:pointer;
-}
-.slider-box1 .prev{
-  left:-2px;
-  background:url(../images/slider_controls.png) no-repeat 0 0;
-}
-.slider-box1 .next{
-  right:-2px;
-  background:url(../images/slider_controls.png) no-repeat -29px 0;
-}
-
+/* Подвал сайта */
 footer{
   background: #FAFAFA;
   border-top:1px solid #CDCDCD;
   border-bottom:1px solid #CDCDCD;
 }
 
+/* Блоки подвала сайта */
 .footer-box{
   min-height: auto;
   padding: 40px;
 }
 
+/* Первый блок подвала сайта */
 .footer-box.box-1{
   border-right: 1px solid #CDCDCD;
 }
 
+/* Второй блок подвала сайта */
 .footer-box.box-2{
   border-right: 1px solid #CDCDCD;
 }
 
+/* Третий блок подвала сайта */
 .footer-box.box-3{
 }
- 
+
+/* Блок для ссылок подвала сайта */
 .footer-nav{
   float: left;
 }
 
+/* Список ссылок в подвале сайта */
 .footer-nav li{
   list-style: none;
   margin-bottom: 10px;
 }
 
+/* Ссылки в списке ссылок подала сайта */
 .footer-nav li a{
   color: #4F4F4F;
   font-size: 1.1em;
   font-weight: 400;
 }
 
+/* Заголовок для списка ссылок в подвале сайта */
 .footer-nav li.footer-nav-head{
   list-style: none;
   font-size: 1.2em;
 }
 
+/* Кнопки внутри форм */
 #sendform{
   background: #F37C3D;
   color: #fff;
@@ -280,13 +282,14 @@ footer{
   padding: 10px 12px;
 }
 
+/* Блок с копирайтом */
 .small-footer{
   padding: 20px;
   color: #616161;
   text-align: center;
 }
 
-/* Media Queries */
+/* Адаптивность для мобильных устройств */
 @media screen and (max-width: 480px){
 
     .hero-section{
@@ -295,17 +298,8 @@ footer{
     .hero-section h3 {
         margin-top: 8em;
     }
-    .slider-content {
+    .block-content {
       margin-top: 100px;
-    }
-
-    .slider-nav {
-      margin:  20px auto;
-      padding: 0;
-      display: block;
-      width: 150px;
-      float: none;
-      height: 100px;
     }
 
     .footer-box.box-1{
@@ -342,19 +336,9 @@ footer{
     .hero-section h3 {
         margin-top: 8em;
     }
-    .slider-content {
+    .block-content {
       margin-top: 100px;
     }
-
-    .slider-nav {
-      margin:  20px auto;
-      padding: 0;
-      display: block;
-      width: 150px;
-      float: none;
-      height: 100px;
-    }
-
     .footer-box.box-1{
       border-right: none!important;
       border-bottom: 1px solid #CDCDCD;
@@ -378,14 +362,6 @@ footer{
  
 }
 @media (max-width: 991px) and (min-width: 768px){
-    .slider-nav {
-      margin:  20px auto;
-      padding: 0;
-      display: block;
-      width: 150px;
-      float: none;
-      height: 100px;
-    }
     .footer-box.box-1{
       border-right: none!important;
       border-bottom: 1px solid #CDCDCD;

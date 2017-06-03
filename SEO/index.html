@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
+   <!-- Начало головного описания страницы-->
    <head>
+   
+	  <!-- [Стандартные модули] -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="author" content="MartyushovMV">
       <title>Основные методы продвижения веб-сайтов</title>
-      <meta name="description" content="" />
-      <!-- Bootstrap core CSS -->
-      <meta name="author" content="">
-      <link rel="icon" href="../../favicon.ico">
-      <!-- Bootstrap core CSS -->
+	  
+      <!-- [Подключение Bootstrap CSS] -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom CSS -->
+	  
+      <!-- [Подключение других CSS] -->
       <link href="css/style.css" rel="stylesheet">
-	  <link href="css/stylejs.css" rel="stylesheet">
       <link href="css/helper.css" rel="stylesheet">
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/themify-icons.css">
-      <!-- custom fonts -->
-      <link href="//fonts.googleapis.com/css?family=Nunito:200,400,700,800" rel="stylesheet">
-	  <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+	  
+      <!-- [Подключение шрифтов] -->
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,800" rel="stylesheet">
+	  
+	  <!-- [Подключение значка] -->
+	  <link rel="icon" type="image/png" href="favicon.png" />
+	  
    </head>
+   <!-- Конец головного описания страницы -->
+   
+   <!-- Начало тела страницы-->
    <body class="page-content">
+   
+	  <!-- Начало блока навигационного меню -->
       <nav class="navbar navbar-default navbar-fixed-top" id="verh">
         <div class="container">
               <div class="navbar-header">
@@ -41,10 +51,12 @@
                   <li><a href="#video"><strong>Видео</strong></a></li>
                   <li><a href="#contacts"><strong>Контакты</strong></a></li>
                 </ul>
-              </div><!--/.nav-collapse -->
+              </div>
           </div>
       </nav>
-
+	  <!-- Конец блока навигационного меню -->
+	  
+	  <!-- Начало первого экрана -->
       <div class="container-fluid" id="main">
          <div class="row hero-section">
             <div class="col-md-12 text-center">
@@ -54,8 +66,9 @@
             </div>
          </div>
       </div>
+	  <!-- Конец первого экрана -->
 
-
+	   <!-- Начало стартового раздела -->
        <div class="container-fluid" id="start">
          <div class="row body-content">
             <div class="col-md-12 text-center mt-150">
@@ -66,9 +79,12 @@
             </div>
          </div>
       </div>
-
+	  <!-- Конец стартового раздела -->
+	  
+	  <!-- Начало раздела "Виды оптимизации" -->
+	  <!-- Начало блока "Внутренняя оптимизация" -->
       <div class="container" id="methods">
-         <div class="row slider-content">
+         <div class="row block-content">
              <div class="col-md-6 col-md-offset-1">
                 <h1 class="f-extrabold">Внутренняя оптимизация</h1>
                 <p>
@@ -77,7 +93,7 @@
                 </p>
                 <div class="row">
                    <div class="col-md-12 col-xs-12">
-                      <form action="javascript:PopUpShow()"><button id="sendform" class="btn btn-default mt-10 btn-block">Узнать подробнее</button></form>
+                      <button id="sendform" class="btn btn-default mt-10 btn-block" onClick="window.open('https://martyushovmv.github.io/SEO/images/seocheck.png', 'popup', 'width=640,height=480,left=50,top=50');">Узнать подробнее</button>
                    </div>
                 </div>
              </div>
@@ -86,41 +102,11 @@
              </div>
          </div>
       </div>
+	  <!-- Конец блока "Внутренняя оптимизация" -->
 	  
-	  	  <div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-	
-	    <a href="javascript:PopUpHide()">Закрыть</a>
-	
-<div id="carousel">
-
-	<div id="buttons">
-		<a href="#" id="prev">prev</a>
-		<a href="#" id="next">next</a>
-		<div class="clear"></div>
-	</div>
-	
-	<div class="clear"></div>
-
-	<div id="slides"> 
-		<ul>
-			<li><img src="images/sled1.JPG" alt="Slide 1"/></li>
-			<li><img src="images/sled2.JPG" alt="Slide 2"/></li>
-			<li><img src="images/sled3.JPG" alt="Slide 3"/></li>
-			<li><img src="images/sled4.JPG" alt="Slide 4"/></li>
-			<li><img src="images/sled5.JPG" alt="Slide 5"/></li>
-		</ul>
-		<div class="clear"></div>
-	</div>
-
-</div>
-	
-	
-    </div>
-</div>
-	  
-	        <div class="container">
-         <div class="row slider-content">
+	  <!-- Начало блока "Внешняя оптимизация" -->
+	  <div class="container">
+         <div class="row block-content">
 		              <div class="col-md-5">
                 <img src="images/met2.png" class="img-responsive hidden-xs hidden-sm">
              </div>
@@ -132,91 +118,99 @@
                 </p>
                 <div class="row">
                    <div class="col-md-12 col-xs-12">
-                     <form action="javascript:PopUpShowz()"><button id="sendform" class="btn btn-default mt-10 btn-block">Узнать подробнее</button></form>
+                     <form action="javascript:PopUpShow()"><button id="sendform" class="btn btn-default mt-10 btn-block">Узнать подробнее</button></form>
                    </div>
                 </div>
              </div>
          </div>
       </div>
-	  
-	  
-	  <div class="b-popup" id="popup2">
-    <div class="b-popup-content">
-	
-	<a href="javascript:PopUpHidez()">Закрыть</a>
-	
-	         <div class="slider-box">
-    <div class="slider"> 
-	
-        <img src="images/slid1.JPG" alt="">
+	  <!-- Конец блока "Внешняя оптимизация" -->
+	  <!-- Конец раздела "Виды оптимизации" -->
 
-        <img src="images/slid2.JPG" alt="">
-		
-		<img src="images/slid3.JPG" alt="">
-		
-		<img src="images/slid4.JPG" alt="">
-		
-		<img src="images/slid5.JPG" alt="">
-		
-		<img src="images/slid6.JPG" alt="">
-
-     </div>
-    <div class="prev"></div>
-    <div class="next"></div>
-        </div>
+	  <!-- Начало всплывающего окна со слайдером-->
+	  <div class="b-popup" id="popup1">
+		<div class="b-popup-content">
 	
-    </div>
-</div>
-	  
-	  	        
-				<div class="container" id="video">
-					  			<hr class="linee">
-		 <div class="col-md-12 text-center">
-		 
+		<a href="javascript:PopUpHide()">Закрыть</a>
+	
+			<!-- Начало слайдера-->
+			<div class="slider-box">
+				<div class="slider"> 
+	
+				<img src="images/slid1.jpg" alt="Слайд1">
+				<img src="images/slid2.jpg" alt="Слайд2">
+				<img src="images/slid3.jpg" alt="Слайд3">
+				<img src="images/slid4.jpg" alt="Слайд4">
+				<img src="images/slid5.jpg" alt="Слайд5">
+				<img src="images/slid6.jpg" alt="Слайд6">
+
+				</div>
+			<div class="prev"></div><!-- Кнопка "Вперёд" -->
+			<div class="next"></div><!-- Кнопка "Назад" -->
+			</div>
+			<!-- Конец слайдера-->
+	
+		</div>
+	  </div>
+	  <!-- Конец всплывающего окна со слайдером-->
+
+	  <!-- Начало раздела с видео -->
+	  <div class="container" id="video">
+		<hr class="linee">
+			<div class="col-md-12 text-center">
 		 		<h1 class="f-extrabold">Небольшая видеолекция</h1><br>
-		<p>Для более успешного освоения материала я&nbsp;рекомендую посмотреть данное видео:</p>
-		
-    <div class="thumb-wrap">
-        <iframe src="https://www.youtube.com/embed/pLPX8jiY0Pk" allowfullscreen></iframe>
-    </div>
-	
-         </div>
-      </div>
-
+				<p>Для более успешного освоения материала я&nbsp;рекомендую посмотреть данное видео:</p>
+					<div class="thumb-wrap">
+						<iframe src="https://www.youtube.com/embed/pLPX8jiY0Pk" allowfullscreen></iframe>
+					</div>
+			</div>
+	  </div>
+	  <!-- Конец раздела с видео -->
+	  
+	  <!-- Начало футера -->
       <footer>
           <div class="container" id="contacts">
           <div class="row footer-content">
+		  
+			 <!-- Начало блока "Контакты" -->
              <div class="col-md-4 footer-box box-1">
               <div class="row">
                 <div class="col-md-12">
+				
+				   <!-- Начало первого столбца -->
                    <ul class="footer-nav col-md-6">
 					 <li class="footer-nav-head f-extrabold">Контакты</li><br>
                      <li><a href="https://www.facebook.com/MartyushovMV"><img src="images/facebook.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/MartyushovMV">Facebook</a></li>
                      <li><a href="https://vk.com/id44946875"><img src="images/vk.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://vk.com/id44946875">Vkontakte</a></li>
                      <li><a href="https://plus.google.com/u/0/110117203793235358922"><img src="images/google.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://plus.google.com/u/0/110117203793235358922">Google+</a></li>
                    </ul>
+				   <!-- Конец первого столбца -->
 
+				   <!-- Начало второго столбца -->
                    <ul class="footer-nav col-md-6">
 				     <li class="footer-nav-head f-extrabold">&nbsp;</li><br>
                      <li><a href="https://twitter.com/B_Screamer"><img src="images/twitter.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/B_Screamer">Twitter</a></li>
                      <li><a href="https://www.youtube.com/channel/UCVvlTduJaID9Jdvu_9OU19w"><img src="images/youtube.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCVvlTduJaID9Jdvu_9OU19w">YouTube</a></li>
                      <li><a href="https://github.com/MartyushovMV"><img src="images/git.png"></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/MartyushovMV">GitHub</a></li>
                    </ul>
+				   <!-- Конец второго столбца -->
+				   
                  </div>
-               </div>
-<br>
-<br>
+               </div><br><br>
              </div>
+			 <!-- Конец блока "Контакты" -->
 
+			 <!-- Начало блока "Информация о сайте" -->
              <div class="col-md-4 footer-box box-2">
                  <p class="f-extrabold">Информация о сайте</p>
                  <p>Внимание! Данный веб-сайт был создан исключительно в&nbsp;учебных целях. Все&nbsp;заимствованные материалы были использованы только для демонстрации преподавателю.
                   <br/><br/>
 				  Тематика сайта: основные методы продвижения веб-сайтов.
                   </p>
-            
-
              </div>
+			 <!-- Конец блока "Информация о сайте" -->
+			 
+			 <!-- Начало блока "Форма обратной связи" -->
              <div class="col-md-4 footer-box box-3">
                  <p class="f-extrabold">Появились вопросы? Пишите:</p>
                  <div class="clear">
@@ -225,30 +219,34 @@
                       <button id="sendform" class="btn btn-default mt-10 btn-block">Отправить</button>
                     </form>
                 </div>
+				<!-- Конец блока "Форма обратной связи" -->
 
              </div>
           </div>
           </div>
       </footer>
+	  <!-- Конец футера -->
+	  
+	  <!-- Начало блока с копирайтом -->
       <div class="container">
         <div class="row small-footer">
           <div class="col-md-12">
-            <small>This site made by Martyushov&nbsp;M.&nbsp;V.</small>
+            <small>This site made by Martyushov&nbsp;M.&nbsp;V. © 2017</small>
           </div>
         </div>
       </div>
-
-      <!-- Bootstrap core JavaScript
-         ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
+	  <!-- Конец блока с копирайтом -->
+	  
+	  <!-- [Подключение JS-скриптов] -->
+	  <!-- (Помещено в конец страницы для ускорения загрузки) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery-scrollto/jquery-scrollto.js"></script>
-	  <script type="text/javascript" src="js/script.js"></script>
-	  <script type="text/javascript" src="js/present.js"></script>
-	  <script type="text/javascript" src="js/sli.js"></script>
-    
-
+	  <script type="text/javascript" src="js/slider.js"></script>
+	  <script type="text/javascript" src="js/popup.js"></script>
 
    </body>
+   <!-- Конец тела страницы-->
+   
 </html>
