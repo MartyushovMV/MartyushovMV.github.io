@@ -127,6 +127,12 @@ p{
   color: #4F4F4F;
 }
 
+/* Разделяющая линия */
+.linee {
+  width: 90%;
+  color: #696969;
+}
+
 /* Блок с фреймом YouTube-видео */
 .thumb-wrap {
   position: relative;
