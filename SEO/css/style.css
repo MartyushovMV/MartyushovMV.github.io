@@ -129,8 +129,8 @@ p{
 
 /* Разделяющая линия */
 .linee {
-  width: 90%;
-  color: #696969;
+  width: 85%;
+  border-top: 1px solid #CDC5BF;
 }
 
 /* Блок с фреймом YouTube-видео */
