@@ -176,6 +176,13 @@ h3 {
 	margin: 5%;
 }
 
+.workslist {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+}
+
 .prtext {
 	text-align : center;
 	font-family: ALSSchlangesans;
