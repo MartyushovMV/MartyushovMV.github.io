@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kramer's method</title>
+	<meta name="author" content="Martyushov M.V." />
+</head>
+
+<body>
+
+<div class="resultplace"><div>
+
+	<script>
+
+async function checking() {
+	let body = document.querySelector('body');
+	let data = await fetch('https://kodaktor.ru/j/kramer_data',{method:'GET'})
+  .then(res=>res.json());
+  data.data.forEach((dataItem)=>{
+  	fetch(data.url+'?'+dataItem.input,{method:'POST'})
+    .then(x=>x.json())
+    .then(response=>{
+  		console.log(response);
+      let result = response.result;
+      body.innerHTML+='Результат: '+JSON.stringify(result);
+      if (result==dataItem.output.result) {
+      	body.innerHTML+=' == ';
+      } else {
+      	body.innerHTML+=' != ';
+      }
+      body.innerHTML+='Ожидалось: '+JSON.stringify(dataItem.output.result)+'<br/>';
+    });
+  });
+    
+}
+
+checking();
+	
+	</script>
+
+</body>
+</html>

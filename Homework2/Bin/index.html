@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style> 
+	*{zoom: 110%} .cont {width: 100%; display: flex} 
+	.col {width:50%; border:inset; background: silver; padding: 10px} input {background: transparent}
+	.col a {text-decoration:none}
+	h1 {text-align:center}
+	.titul {width:90%}
+	.rules {float:left; margin-right:120px}
+	.prices {margin-top:50px}
+</style>
+<title>Выбор товаров</title>
+</head>
+<body>
+<h1>Добро пожаловать в раздел выбора товаров</h1>
+<div class="rules">
+<h3>Правила пользования корзиной:</h3>
+<p>- Вы можете приобрести только 1 экземпляр конкретного товара</p>
+<p>- При успешном добавлении товара в корзину поле выбора подсветится зелёным</p>
+<p>- Если на вашем счете не хватает денег для покупки выбранного товара, поле выбора подсветится красным</p>
+<p>- Если вы ошиблись и хотите начать наполнение корзины заново, нажмите "Сбросить выбор"</p>
+<p>Ваш баланс: <b id="bal"></b> у.е.</p>
+</div>
+
+<div class="prices">
+<h3>Прайс-лист:</h3>
+<table>
+<tr>
+<td><b>hdd:</b></td><td><u id="pr1"></u> у.е.</td>
+</tr>
+<tr>
+<td><b>ssd:</b></td><td><u id="pr2"></u> у.е.</td>
+</tr>
+<tr>
+<td><b>usbdrive:</b></td><td><u id="pr3"></u> у.е.</td>
+</tr>
+<tr>
+<td><b>blu-ray:</b></td><td><u id="pr4"></u> у.е.</td>
+</tr>
+<tr>
+<td><b>hd-dvd:</b></td><td><u id="pr5"></u> у.е.</td>
+</tr>
+</table>
+</div>
+
+<table class="titul">
+<tr>
+<td align="center"><h3>Поле выбора</h3></td>
+<td align="center"><h3>Корзина</h3></td>
+</tr>
+</table>
+<div class="cont">
+   <div class="col">
+        <div id="adder">          <!-- «компонент-клиент» -->
+		
+          <select id="selectBox">
+  <option>hdd</option>
+  <option>ssd</option>
+  <option>usbdrive</option>
+  <option>blu-ray</option>
+  <option>hd-dvd</option>
+		  </select>
+		  
+          <input type="button" id="addTaskButton" value="Добавить в корзину" /><br><br>
+		  <a href="javascript:window.location.reload()"> <input type="button" value="Сбросить выбор" /></a>
+        </div>  
+   </div>   
+   <div class="col" id="tasksCont">
+     <ul id="tasks"></ul>         <!-- «компонент-сервер» -->
+   
+      <br>
+   <table style="border: 1px solid black;">
+   <tr>
+   <td>Итого:</td>
+   <td><b id="res"></b> у.е.</td>
+   </tr>
+   </table>
+   <br>
+   
+   </div>
+</div>  
+<script>{
+  const localEvents = {query:"addTask", response:"taskResult"}
+      , statuses = ["red", "lime"]
+      , CLIENT = document.querySelector(`#adder`)
+      , SERVER = document.querySelector(`#tasks`)  
+      ;
+	  
+  let hdd_price = 70;
+  let ssd_price = 200;
+  let usbdrive_price = 45;
+  let bluray_price = 100;
+  let hddvd_price = 65;
+	  
+function ready() {document.getElementById('res').innerHTML = sum; }
+document.addEventListener("DOMContentLoaded", ready);
+
+function steady() {document.getElementById('bal').innerHTML = limit; }
+document.addEventListener("DOMContentLoaded", steady);
+
+function pr1() {document.getElementById('pr1').innerHTML = hdd_price; }
+document.addEventListener("DOMContentLoaded", pr1);
+
+function pr2() {document.getElementById('pr2').innerHTML = ssd_price; }
+document.addEventListener("DOMContentLoaded", pr2);
+
+function pr3() {document.getElementById('pr3').innerHTML = usbdrive_price; }
+document.addEventListener("DOMContentLoaded", pr3);
+
+function pr4() {document.getElementById('pr4').innerHTML = bluray_price; }
+document.addEventListener("DOMContentLoaded", pr4);
+
+document.getElementById('pr5').innerHTML = hddvd_price;
+	
+  function createMessage(eventTitle='testEvent', content='test', sender=null){
+      return new CustomEvent( eventTitle, {
+             detail: {content, sender},
+             bubbles: false  
+      });
+  }
+  function sendMessage(params){
+      params.where.dispatchEvent( createMessage( params.title, params.content,  params.sender ) );        
+  }
+  
+      function remove()
+    {
+	let sel = document.getElementById('selectBox');
+        sel.removeChild(sel.options[sel.selectedIndex]);
+    }
+  
+  CLIENT.querySelector('#addTaskButton').addEventListener('click', e=>{
+     sendMessage({
+          where: SERVER,
+          title: localEvents.query,
+          content:  e.target.parentElement.querySelector('option:checked').text,
+          sender:  e.target.parentElement
+     });
+  });
+  
+  CLIENT.querySelector('#addTaskButton').addEventListener('click', remove);
+  
+  let sum = 0;
+  let limit = 230;
+  
+  SERVER.addEventListener(localEvents.query, e=>{
+
+   switch (e.detail.content) {
+       case 'hdd':
+	   sum += hdd_price;
+	   break;
+	          case "ssd":
+			  sum += ssd_price;
+			  break;
+	case "usbdrive":
+	sum += usbdrive_price;
+	break;
+		      case "blu-ray":
+			  sum += bluray_price;
+			  break;
+	case "hd-dvd":
+	sum += hddvd_price;
+	break;
+    };
+  
+  if (sum>limit) {
+		yel = document.getElementById('selectBox');
+      let newOption = new Option(e.detail.content);
+    yel.options[yel.options.length]=newOption;
+	
+     switch (e.detail.content) {
+       case 'hdd':
+	   sum -= hdd_price;
+	   break;
+	          case "ssd":
+			  sum -= ssd_price;
+			  break;
+	case "usbdrive":
+	sum -= usbdrive_price;
+	break;
+			  case "blu-ray":
+			  sum -= bluray_price;
+			  break;
+	case "hd-dvd":
+	sum -= hddvd_price;
+	break;
+    };
+  return  sendMessage( {
+          where: e.detail.sender,
+          title: localEvents.response,
+          content:  false
+     });
+    };
+  
+    console.log(sum);
+	document.getElementById('res').innerHTML = sum;
+  
+    const newLiTask = document.createElement('li');
+    newLiTask.appendChild(  document.createTextNode( e.detail.content ) );
+    e.target.appendChild(newLiTask);
+    sendMessage({where: e.detail.sender, title: localEvents.response, content:  true});
+  });
+  CLIENT.addEventListener(localEvents.response,  e=>{
+         e.target.style.background = statuses[ +e.detail.content];
+  });
+  
+}</script>
+
+</body>
+</html>
