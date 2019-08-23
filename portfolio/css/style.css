@@ -191,6 +191,10 @@ h3 {
 	margin: auto;
 }
 
+a.scroll {
+	color: #ffffff;
+}
+
 .prtext {
 	text-align : center;
 	font-family: ALSSchlangesans;
