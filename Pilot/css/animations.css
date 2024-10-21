@@ -1,0 +1,41 @@
+.text_animation_for_children p {
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  -webkit-animation: clip 2.5s ease forwards;
+  animation: clip 2.5s ease forwards;
+}
+@-webkit-keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+    clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+    clip-path: polygon(0 0%, 0% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
