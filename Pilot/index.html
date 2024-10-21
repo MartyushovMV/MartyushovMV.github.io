@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pilot.spmi.ru/themes/webapp/framework/bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="https://pilot.spmi.ru/themes/webapp/plugin/keen-slider/keen-slider.min.css" />
+  </head>
+
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+      <div class="layout-container">
+
+        <header role="banner">
+          <div class="columns is-mobile is-multiline header-columns">
+            <div class="column is-10-desktop is-10-widescreen is-9-fullhd header-column">
+              <div class="mini-nav">
+                <div class="main-logo-wrapper">
+                  <a href="/" title="Главная" rel="home">
+                    <img src="https://pilot.spmi.ru/themes/webapp/logo.svg" alt="Главная">
+                  </a>
+                </div>
+                <nav role="navigation" aria-labelledby="block-webapp-main-menu-menu" id="block-webapp-main-menu" class="main-menu">
+                  <h2 class="visually-hidden is-hidden" id="block-webapp-main-menu-menu">Основная навигация</h2>
+                  <ul class="mini-nav-menu">
+                    <li>
+                      <a href="https://spmi.ru/">Горный университет</a>
+                    </li>
+                    <li>
+                      <a href="#edu_programs">Образовательные программы</a>
+                    </li>
+                    <li>
+                      <a href="#practic_skills">Практические навыки и опыт</a>
+                    </li>
+                    <li>
+                      <a href="#contacts">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <span class="navbar-burger is-hidden-desktop has-text-right" data-target="sidebarMenuSection"><img src="https://pilot.spmi.ru/sites/default/files/images/menu.svg" alt=""> </span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main role="main">
+          <a id="main-content" tabindex="-1"></a>
+            <div class="layout-content">
+              <div>
+                <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                <div id="block-header-banner" class="columns main-banner-columns">
+                  <div class="column p-0">
+                    <div class="main_banner">
+                      <div>
+                        <video id="background-video" autoplay muted poster="https://pilot.spmi.ru/sites/default/files/newimages/banner.png" onended="videoEnded(this)" style="margin-top: 0.5vw;">
+                          <source src="https://pilot.spmi.ru/sites/default/files/newimages/banner_1920.mp4" type="video/mp4">
+                        </video>
+                        <noscript>
+                          <style type="text/css">
+                              #background-video { display:none; }
+                          </style>
+                          <picture>
+                            <source media="(max-width: 499px)" srcset="https://pilot.spmi.ru/sites/default/files/newimages/banner_499.png">
+                            <source media="(max-width: 768px)" srcset="https://pilot.spmi.ru/sites/default/files/newimages/banner_768.png">
+                            <source media="(max-width: 1023px)" srcset="https://pilot.spmi.ru/sites/default/files/newimages/banner_1024.png">
+                            <img src="https://pilot.spmi.ru/sites/default/files/newimages/banner.png">
+                          </picture>
+                      </noscript>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="block-initial-text" class="initial-text-section">
+                  <div class="columns is-mobile is-multiline initial-text-columns">
+                    <div class="column is-11-desktop is-10-widescreen is-9-fullhd initial-text-column">
+                      <div class="columns is-gapless is-mobile quote-columns">
+                        <div class="column is-narrow">
+                          <img class="quote_left" src="https://pilot.spmi.ru/sites/default/files/images/quote_left.png" width="52" height="48">
+                        </div>
+                        <div class="column is-auto quote-column">
+                          <p id="txt_1" style="min-height: 80px;"></p>
+                          <p id="txt_2" style="min-height: 108px;"></p>
+                          <p id="txt_3" style="min-height: 27px;" class="has-text-weight-bold"></p>
+                          <noscript>
+                            <style type="text/css">
+                              .txt_1, .txt_2, .txt_3 {
+                                display: none;
+                              }
+                              @media screen and (min-width:769px) {
+                                .hoverable-link:hover .twosidedimg-hover {
+                                  display: inline;
+                                }
+                              }
+                            </style>
+                            <p>В мае 2023 года Президент РФ Владимир Путин подписал указ <a href="https://spmi.ru/sites/default/files/imci_images/metodologia/2023-12/0001202305120005.pdf">«О некоторых вопросах совершенствования системы высшего образования»</a>, целью которого является качественное улучшение процесса подготовки кадров для обеспечения долгосрочных потребностей различных отраслей отечественной экономики.</p><p>Одна из наиболее актуальных задач сегодняшнего дня заключается в том, чтобы обеспечить ускоренный технологический прогресс нашего минерально-сырьевого комплекса - станового хребта любой суверенной державы. Реальный производственный сектор нуждается не в бакалаврах и магистрах, а в молодых инженерах, которые уже на стадии окончания «альма-матер» будут обладать необходимым для работы набором знаний, навыков и дополнительных компетенций.</p><p><strong>Владимир Литвиненко</strong></p>
+                          </noscript>
+                        </div>
+                        <div class="column is-narrow">
+                          <img class="quote_right" src="https://pilot.spmi.ru/sites/default/files/images/quote_right.png" width="52" height="48">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns is-centered is-mobile is-multiline is-gapless initial-text-underline-wrapper">
+                  <div class="column is-11-desktop is-10-widescreen is-9-fullhd">
+                    <picture>
+                      <source media="(max-width: 499px)" srcset="https://pilot.spmi.ru/sites/default/files/images/initial_text_underline_499.png">
+                      <source media="(max-width: 768px)" srcset="https://pilot.spmi.ru/sites/default/files/images/initial_text_underline_768.png">
+                      <source media="(max-width: 1024px)" srcset="https://pilot.spmi.ru/sites/default/files/images/initial_text_underline_1024.png">
+                      <img src="https://pilot.spmi.ru/sites/default/files/images/initial_text_underline.png">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="edu-programs" role="navigation" aria-labelledby="block-edu-progs-menu" id="block-edu-progs">
+                  <div class="columns is-centered is-mobile is-multiline" id="edu_programs">
+                    <div class="column is-12-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd">
+                      <div class="columns is-mobile is-multiline columns-3-elem">
+                        <div class="column is-12 section-title p-0">
+                          <h3>Образовательные программы</h3>
+                        </div>
+                        <div class="column is-12 section-edu-links">
+                          <div class="edu-links-wrapper">
+                            <div class="columns is-centered m-0">
+                              <div class="p-0 edu-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/vysshee-inzhenernoe-obrazovanie" class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_1.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_hover_1.gif" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="p-0 edu-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/specializirovannoe-vysshee-obrazovanie" class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_2.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_hover_2.gif" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="p-0 edu-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/podgotovka-kadrov-vysshey-kvalifikacii" class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_3.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/edu_programs_hover_3.gif" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns is-centered is-mobile is-multiline is-gapless">
+                  <div class="column is-11-desktop is-10-widescreen is-9-fullhd">
+                    <picture>
+                      <source media="(max-width: 499px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_top_499.png">
+                      <source media="(max-width: 768px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_top_768.png">
+                      <source media="(max-width: 1024px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_top_1024.png">
+                      <img src="https://pilot.spmi.ru/sites/default/files/images/videos_top.png">
+                    </picture>
+                  </div>
+                </div>
+
+                <div id="block-videosection" class="videosection">
+                  <div class="columns is-centered is-mobile is-multiline is-gapless">
+                    <div class="column is-11-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd">
+                      <div class="columns metod_video video_attachments is-mobile is-multiline">
+                        <div class="column is-12-mobile is-12-tablet is-6-desktop is-6-widescreen is-6-fullhd masked-image-block">
+                          <div class="video-embed-field-provider-youtube video-embed-field-responsive-video image-mask hide" data-aos="custom">
+                            <div>
+                              <iframe src="https://www.youtube.com/embed/gZjOvO_0gYE" frameborder="0" allowtransparency="" width="200" height="113" class="media-oembed-content" title="Высшее инженерное образование"></iframe>
+                            </div>
+                          </div>
+                          <a href="https://pilot.spmi.ru/sites/default/files/pdf_docs/infographics_engineers.pdf">
+                            <div class="is-flex is-flex-direction-column video-attachment-link">
+                              <div class="columns is-multiline is-gapless is-mobile">
+                                <div class="column is-auto attachment-title">
+                                  <span>Инженерная подготовка. Методологические таблицы</span>
+                                </div>
+                                <div class="column is-narrow download-icon">
+                                  <img data-aos="custom" data-text-anim="data-text-anim" src="https://pilot.spmi.ru/sites/default/files/images/download_arrow.svg">
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="column is-12-mobile is-12-tablet is-6-desktop is-6-widescreen is-6-fullhd masked-image-block">
+                          <div class="video-embed-field-provider-youtube video-embed-field-responsive-video image-mask hide" data-aos="custom">
+                            <div>
+                              <iframe src="https://www.youtube.com/embed/xqxQljKeNWo" frameborder="0" allowtransparency="" width="200" height="113" class="media-oembed-content" title="Подготовка кадров высшей квалификации"></iframe>
+                            </div>
+                          </div>
+                          <a href="https://pilot.spmi.ru/sites/default/files/pdf_docs/infographics_hqs.pdf">
+                            <div class="is-flex is-flex-direction-column video-attachment-link">
+                              <div class="columns is-multiline is-gapless is-mobile">
+                                <div class="column is-auto attachment-title">
+                                  <span>Аспирантам. Методологические таблицы</span>
+                                </div>
+                                <div class="column is-narrow download-icon">
+                                  <img data-aos="custom" data-text-anim="data-text-anim" src="https://pilot.spmi.ru/sites/default/files/images/download_arrow.svg">
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns is-centered is-mobile is-multiline is-gapless" style="margin-bottom: 0;">
+                  <div class="column is-11-desktop is-10-widescreen is-9-fullhd">
+                    <picture>
+                      <source media="(max-width: 499px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_underline_499.png">
+                      <source media="(max-width: 768px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_underline_768.png">
+                      <source media="(max-width: 1024px)" srcset="https://pilot.spmi.ru/sites/default/files/images/videos_underline_1024.png">
+                      <img src="https://pilot.spmi.ru/sites/default/files/images/videos_underline.png">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="practic-skills" role="navigation" aria-labelledby="block-pro-skills-menu" id="block-pro-skills">
+                  <div class="columns is-centered is-mobile is-multiline" id="practic_skills">
+                    <div class="column is-12-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd">
+                      <div class="columns is-mobile is-multiline columns-3-elem">
+                        <div class="column is-12 section-title p-0">
+                          <h3>Практические навыки и опыт</h3>
+                        </div>
+                        <div class="column is-12 section-skills-links">
+                          <div class="skills-links-wrapper">
+                            <div class="columns is-centered m-0">
+                              <div class="p-0 skills-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/dopolnitelnye-professionalnye-kompetencii"  class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_1.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_hover_1.png" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="p-0 skills-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/aktovye-lekcii"  class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_2.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_hover_2.png" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="p-0 skills-link-block">
+                                <div class="masked-image-block">
+                                  <a href="https://pilot.spmi.ru/partners"  class="hoverable-link image-mask hide" data-aos="custom">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_3.png" class="twosidedimg">
+                                    <img src="https://pilot.spmi.ru/sites/default/files/images/practic_skills_hover_3.png" class="twosidedimg-hover">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="block-news-and-reviews" class="fullheight_section">
+                  <div class="columns is-centered is-mobile is-multiline is-gapless">
+                    <div class="column is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-9-fullhd">
+                      <div class="columns metod_sum is-multiline is-variable is-8">
+
+                        <div class="column metod_sum_1 is-12-mobile is-12-tablet is-3-desktop is-3-widescreen is-3-fullhd is-flex is-flex-direction-column">
+                          <div class="is-flex-grow-1">
+                            <div class="views-element-container">
+                              <div class="view view-modern-obrazovaniya view-id-modern_obrazovaniya view-display-id-block_2 js-view-dom-id-be8cf4cd6239b8fa15ed6bd733670eadc3aedb021606fe25d5c573754977c884">
+                                <div class="view-content">
+                                  <div class="columns is-multiline">
+                                    <div class="column is-12 metod_news novosti">
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/dol_7198.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-09-12/stal-izvesten-razmer-stipendij-aspirantov-sankt-peterburgskogo-gornogo-universiteta">Стал известен размер стипендий аспирантов Горного университета </a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/img_7134.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-09-10/institut-nastavnichestva-v-sankt-peterburgskom-gornom-universitete-vyshel-na-novyj">Институт наставничества в Санкт-Петербургском горном университете вышел на новый уровень</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/img_6891.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-09-03/vladimir-litvinenko-raskryl-detali-modernizacii-sistemy-vysshego-inzhenernogo">Ректор Владимир Литвиненко раскрыл детали модернизации системы высшего инженерного образования России</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/002_img_0536.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-08-04/v-sankt-peterburgskom-gornom-universitete-podveli-itogi-priyomnoj-kampanii">В Санкт-Петербургском горном университете подвели итоги приёмной кампании</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/img_1634.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-07-30/rektor-sankt-peterburgskogo-gornogo-universiteta-otvetil-na-novye-voprosy-abiturientov">Ректор Санкт-Петербургского горного университета ответил на новые вопросы абитуриентов и их родителей</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="hover-new" style="background: url(https://pilot.spmi.ru/sites/default/files/news_images/img_6208.jpg) no-repeat; background-size: cover;">
+                                        <div class="new">
+                                          <div>
+                                            <a href="https://forpost-sz.ru/a/2024-07-25/vladimir-litvinenko-otvetil-na-voprosy-abiturientov-sankt-peterburgskogo-gornogo">Ректор Владимир Литвиненко ответил на вопросы абитуриентов Горного университета</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column metod_sum_2 is-12-mobile is-12-tablet is-9-desktop is-9-widescreen is-9-fullhd is-flex is-flex-direction-column">
+                          <div class="is-flex-grow-1">
+                            <div class="views-element-container">
+                              <div class="view view-reviews view-id-reviews view-display-id-block_1 js-view-dom-id-9f7bbb3ed3e4843fee2454bff2c7811283b1535acca4ab09d7c7ecded4533cd2">
+
+                                <div class="view-content">
+                                  <div class="slyder_metod_1" style="padding-top: 0;padding-bottom: 1.25rem;">
+                                    <div class="columns">
+                                      <div class="column metod_block_title is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
+                                        <h3>Слово студентам, аспирантам, преподавателям</h3>
+                                      </div>
+                                    </div>
+                                    <div class="navigation-wrapperM">
+                                      <div style="margin-bottom: .8rem;">
+                                        <div id="slydermetod1" class="keen-slider">
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/ksenia-belova">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/belova.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Ксения Белова</div>
+                                                  <div class="who_2">Студент специальности «Землеустройство и кадастр»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/mihail-juravlev">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/juravlev.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Михаил Журавлёв</div>
+                                                  <div class="who_2">Студент горного факультета</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/igor-fokin">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/fokin.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Игорь Фокин</div>
+                                                  <div class="who_2">Студент нефтегазового факультета</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/maksim-limanov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/maksim-limanov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Максим Лиманов</div>
+                                                  <div class="who_2">Аспирант специальности &quot;Обогащение полезных ископаемых&quot;</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/valeriy-shekhunov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/valeriy-shekhunov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Валерий Шехунов</div>
+                                                  <div class="who_2">Студент специальности &quot;Прикладная геология&quot;</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/nikita-ruzhin">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/frame-6845.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Никита Ружьин</div>
+                                                  <div class="who_2">Студент специальности &quot;Автомобильное хозяйство&quot;</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/alina-loginova">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/frame-6846.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Алина Логинова</div>
+                                                  <div class="who_2">Студент специальности &quot;Теплоэнергетика и теплотехника&quot;</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/valeriya-shtercer">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/valeriya-shtercer.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Валерия Штерцер</div>
+                                                  <div class="who_2">Аспирант специальности «Материаловедение»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/alekseii-shalygin">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/shalygin.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Алексей Шалыгин</div>
+                                                  <div class="who_2">Доцент кафедры транспорта и хранения нефти и газа</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/node/18">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/mazakov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Евгений Мазаков</div>
+                                                  <div class="who_2">Заведующий кафедрой информационных систем и вычислительной техники</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/sergei-rudnik">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/rudnik.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Сергей Рудник</div>
+                                                  <div class="who_2">Заведующий кафедрой истории</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/node/16">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/zav-kafedroy.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Александр Господариков</div>
+                                                  <div class="who_2">Заведующий кафедрой высшей математики</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/danila-shimko">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/frame-6847.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Данила Шимко</div>
+                                                  <div class="who_2">Студент специальности «Автоматизация технологических процессов и производств»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/sofya-loginova">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/sofya-loginova.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Софья Логинова</div>
+                                                  <div class="who_2">Студент специальности &quot;Экология и природопользование&quot;</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/alina-evsyukova">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/alina-evsyukova.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Алина Евсюкова</div>
+                                                  <div class="who_2">Аспирант специальности «Геотехнологии. Горные машины»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/ekaterina-lushina">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/ekaterina-lushina.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Екатерина Лушина</div>
+                                                  <div class="who_2">Аспирант специальности «Обогащение полезных ископаемых»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                      <div class="columns is-mobile">
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-left-slyder-metod1" class="arrow-black arrow--left" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M1 7L7 1M1 7L7 13M1 7H13" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-right-slyder-metod1" class="arrow-black arrow--right" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M12 7L6 1M12 7L6 13M12 7H0" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1040" height="2" viewBox="0 0 1040 2" fill="none">
+                                    <path d="M0 1H1040" stroke="#B4A471" stroke-dasharray="8 8"></path>
+                                  </svg>
+                                </div>
+    
+                              </div>
+                            </div>
+
+                            <div class="views-element-container">
+                              <div class="view view-reviews view-id-reviews view-display-id-block_2 js-view-dom-id-20eb36732e476313988fa0b600f55b4f221a5b88c346a403e203e935207a01d0">
+
+                                <div class="view-content">
+                                  <div class="slyder_metod_1" style="padding-top: 1.25rem; padding-bottom: 1.25rem;">
+                                    <div class="columns">
+                                      <div class="column metod_block_title is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
+                                        <h3>Слово ректорам</h3>
+                                      </div>
+                                    </div>
+                                    <div class="navigation-wrapperM">
+                                      <div style="margin-bottom: .8rem;">
+                                        <div id="slydermetod4" class="keen-slider">
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/mihail-gordin">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/gordin.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Михаил Гордин</div>
+                                                  <div class="who_2">Ректор Московского государственного технического университета имени Баумана</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/yurii-panov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/panov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Юрий Панов</div>
+                                                  <div class="who_2">Ректор Российского государственного геологоразведочного университета имени Орджоникидзе (МГРИ)</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/alevtina-chernikova">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/chernikova-aa.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Алевтина Черникова</div>
+                                                  <div class="who_2">Ректор Национального исследовательского технологического университета МИСИС</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/leonid-sukhikh">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/sukhikh.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Леонид Сухих</div>
+                                                  <div class="who_2">Исполняющий обязанности ректора Томского политехнического университета</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/natalya-ilina">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/pskov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Наталья Ильина</div>
+                                                  <div class="who_2">Ректор Псковского государственного университета</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/aleksandr-dyakonov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/dyakonov_a.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Александр Дьяконов</div>
+                                                  <div class="who_2">Ректор Альметьевского государственного нефтяного института</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/nazim-balamirzoev">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/balamirzoev.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Назим Баламирзоев</div>
+                                                  <div class="who_2">Ректор Дагестанского государственного технического университета</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="columns is-mobile">
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-left-slyder-metod4" class="arrow-black arrow--left" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M1 7L7 1M1 7L7 13M1 7H13" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-right-slyder-metod4" class="arrow-black arrow--right" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M12 7L6 1M12 7L6 13M12 7H0" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1040" height="2" viewBox="0 0 1040 2" fill="none">
+                                    <path d="M0 1H1040" stroke="#B4A471" stroke-dasharray="8 8"></path>
+                                  </svg>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="views-element-container">
+                              <div class="view view-reviews view-id-reviews view-display-id-block_3 js-view-dom-id-79fb79ee4c423989d16c4ef2c7969f5102b1f80b631a03d4fb1901eabfb1af7c">
+
+                                <div class="view-content">
+                                  <div class="slyder_metod_1" style="padding-top: 1.25rem; padding-bottom: 1.25rem;">
+                                    <div class="columns">
+                                      <div class="column metod_block_title is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
+                                        <h3>Слово губернаторам и работодателям</h3>
+                                      </div>
+                                    </div>
+                                    <div class="navigation-wrapperM">
+                                      <div style="margin-bottom: .8rem;">
+                                        <div id="slydermetod5" class="keen-slider">
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/aleksandr-natalenko">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/natalenko_blok.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Александр Наталенко</div>
+                                                  <div class="who_2">Председатель Совета директоров ПАО «Новатэк»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/sergeii-gustov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/gustov_blok.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Сергей Густов</div>
+                                                  <div class="who_2">Глава компании «Газпром межрегионгаз»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/rustam-minnikhanov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/minnikhanov.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Рустам Минниханов</div>
+                                                  <div class="who_2">Глава Республики Татарстан </div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/sergeii-chibisov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/chibisov_blok.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Сергей Чибисов</div>
+                                                  <div class="who_2">Директор по корпоративным вопросам и акционерной собственности «Лебединского ГОКа»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/andreii-karpov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/elektroapparat_blok.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Андрей Карпов</div>
+                                                  <div class="who_2">Главный конструктор завода «Электроаппарат»</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/igor-kobzev">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/igor-kobzev.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Игорь Кобзев</div>
+                                                  <div class="who_2">Губернатор Иркутской области</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/aleksandr-beglov">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/3.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Александр Беглов</div>
+                                                  <div class="who_2">Губернатор Санкт-Петербурга</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                          <div class="keen-slider__slide">
+                                            <a href="https://pilot.spmi.ru/aysen-nikolaev">
+                                              <div class="columns metod_card is-multiline is-mobile">
+                                                <div class="column metod_foto is-3-mobile is-3-tablet is-3-desktop is-3-widescreen is-3-fullhd">
+                                                  <figure class="image">
+                                                    <img loading="lazy" src="https://pilot.spmi.ru/sites/default/files/reviews/person_photos/aysen-nikolaev.jpg" alt="" typeof="foaf:Image">
+                                                  </figure>
+                                                </div>
+                                                <div class="column metod_who">
+                                                  <div class="who_1">Айсен Николаев</div>
+                                                  <div class="who_2">Глава республики Саха Якутия</div>
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="columns is-mobile">
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-left-slyder-metod5" class="arrow-black arrow--left" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M1 7L7 1M1 7L7 13M1 7H13" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                        <div class="column is-2-mobile is-2-tablet is-1-desktop is-1-widescreen is-1-fullhd is-relative">
+                                          <svg id="arrow-right-slyder-metod5" class="arrow-black arrow--right" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                                            <path d="M12 7L6 1M12 7L6 13M12 7H0" stroke="white"></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1040" height="2" viewBox="0 0 1040 2" fill="none">
+                                    <path d="M0 1H1040" stroke="#B4A471" stroke-dasharray="8 8"></path>
+                                  </svg>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="block-faq" class="faq-section">
+                  <div class="columns is-mobile is-multiline faq-wrapper-columns">
+                    <div class="column is-12-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd faq-wrapper-column">
+                      <div class="columns is-mobile is-multiline is-vcentered faq-columns">
+                        <div class="column is-12 section-title faq-title p-0">
+                          <h3>Часто задаваемые вопросы</h3>
+                        </div>
+                        <div class="column is-12 faq-questions-wrapper p-0">
+                          <div class="faq-questions">
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="0">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>1. Чем отличается «Высшее инженерное образование» от двухуровневого?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Высшее инженерное – это фундаментальное, глубокое изучение базовых общеобразовательных, общетехнических и специальных дисциплин, закрепление их достаточным объёмом практических навыков и производственного опыта в области профессиональной деятельности, а также системная работа по формированию у студента мотивации к тому, чтобы после окончания вуза работать по специальности.</p><p>Бакалавриат даёт общие, теоретические знания дисциплин без их фундаментального закрепления на практике. А магистратура – это индивидуальное двухгодичное последипломное обучение студентов, направленное на самостоятельные занятия научно-исследовательской деятельностью.</p><p>Фактически высшее инженерное образование отличается совершенно другим подходом к формированию мировоззрения в процессе образования в области общеобразовательных, общетехнических и специальных дисциплин на основе перехода от цифрового к аналоговому мышлению. Наличие такого мировоззрения придаёт выпускнику организованный, осмысленный и целенаправленный характер для самореализации в выбранной специальности.</p>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="100">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>2. Как организована учебная программа?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Набор общеобразовательных и общетехнических дисциплин - единый для всех специальностей, и все они преподаются по единым программам в Институте «Базового инженерного образования» университета в одном из учебных корпусов в течение четырёх семестров. Затем студент получает «Свидетельство об окончании базового инженерного образования», что даёт ему право в случае такого желания поменять в рамках укрупнённого направления специальность и даже университет.&nbsp;</p><p>Начиная с пятого семестра студенты обучаются по модулю общеинженерных и специальных дисциплин по профилю специальности. Переход на другую специальность в рамках укрупнённого направления возможен до окончания шестого семестра.</p><p>Навыки, как закрепление на практике материалов лекций, формируются в учебных лабораториях в течение учебного года и учебными практиками, которые проводятся до сдачи экзамена по дисциплине. Личный производственный опыт формируется в процессе обучения:</p><ul><li>Рабочие специальности (не менее двух) - 2-3 года обучения.</li><li>Дополнительные профессиональные компетенции (не менее восьми) - 70 и более часов</li><li>Технологический опыт в компаниях – наших «Академических партнёрах» и на собственных полигонах вуза – до 24 недель.</li><li>Производственная преддипломная практика (после 5 курса для инженерных специальностей) – не менее 16 недель.</li><li>Профессиональная аккредитация инженерных навыков в компаниях - «Академических партнёрах» в качестве «Инженера-стажёра» (6 курс – до защиты выпускной работы) – от 4 до 8 недель.</li></ul>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="200">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>3. Как организован учебный процесс?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Аудиторные занятия - лекции и практики - 13 пар в неделю. Лабораторные, самостоятельные, факультативные и междисциплинарные занятия проводятся дополнительно, они планируются самим студентом, допуск к ним осуществляется по электронной записи. Обязательно физическая культура, в частности, кардиоспорт с контролем со стороны тренеров - ежедневно или через день в спортивном комплексе университета в течение всего периода обучения.</p><p>У каждого студента есть личный педагогический наставник, в задачу которого входит систематизация учёбы юношей и девушек по всем предметам и практикам. Каникулы – не менее 6 недель за учебный год. Посещение занятий и овладение всеми компетенциями является обязательным для всех.</p>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="300">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>4. Какой документ получает выпускник?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Диплом об окончании образовательной программы «Высшего инженерного образования» с указанием: инженер, горный инженер или другой инженерной квалификации с указанием конкретной специальности.</p><p>Кроме того, выпускнику будет выдана характеристика-рекомендация с указанием всех достижений и полученных квалификаций, включая рабочие, специальные и дополнительные профессиональные компетенции, с наличием QR-кода.</p><p>Второй диплом «Инженер-исследователь» получат молодые люди, выполнившие самостоятельное исследование, получившие результат и защитившие его на Научном Совете. Это примерно 2-8% от выпуска.</p>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="400">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>5. Какой документ регулирует отношения студента и вуза?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Это Договор на обучение по образовательной программе «Высшего инженерного обучения» по специальности, который заключается с каждым студентом, зачисленным по приказу.</p><p>В Договоре конкретизированы права и обязанности сторон, включая:</p><ul><li>отношения в области учебной программы;</li><li>обеспечение местом в общежитии;</li><li>выдержка из правил внутреннего распорядка;</li><li>социальный пакет студента;</li><li>форма оплаты за участие в программе.</li></ul>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="500">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>6. Как обеспечивается финансирование затрат студентов, зачисленных в рамках открытого конкурса?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Горный университет пока единственный технический вуз, реализующий вот уже второй год по Указу Президента РФ Пилотный проект «Совершенствование высшего инженерного образования России». В его рамках идет модернизация всей технологической образовательной системы университета от довузовской до конечного результата (цели) – подготовки настоящего специалиста с профессиональным мировоззрением, позволяющим выпускнику иметь организованное, осмысленное и целенаправленное отношение к работе на производстве.</p><p>Все затраты, отнесённые на стоимость обучения, подлежат анализу и будут представлены Министерству и Правительству для планируемого пересмотра системы финансирования высшего образования в нашей стране. Конкретные фактические затраты нашего университета гораздо выше, чем утверждённые нормы бюджетного финансирования, которыми руководствуется Министерство высшего образования и науки, выделяя нам деньги. Это и комплексные затраты на производственные практики, и значительные суммы на развитие и содержание высокотехнологичных полигонов, на которых студенты приобретают навыки до 20 недель в течение своего обучения, совершенствование научной, образовательной и социальной среды на уровне лучших мировых вузов.</p><p>В этой связи доля фактических затрат, которую выделяет Министерство, составляет 30-50% в зависимости от специальности, а остальное софинансирование осуществляется университетом за счёт тех средств, которые он зарабатывает в основном по результату научной и инжиниринговой деятельности.</p><p>Университет – это бюджетное учреждение. Все студенты, зачисленные по открытому конкурсу, обеспечиваются финансированием всех затрат по образовательному договору университетом за счёт бюджетных и собственных средств – в размере 100% на весь период обучения. При желании перевестись в другой вуз (это возможно после 1 учебного года) в справке указывается, что студент обучался за счёт бюджетных средств. Это отражается в образовательном договоре.</p><p>Студенты, зачисленные на образовательные программы сверх этого количества, оплачивают своё обучение самостоятельно или это делает организация (компания). Университет и этой категории частично компенсирует затраты. Данные условия публично отражены в нормативных документах университета.</p>
+                              </div>
+                            </div>
+
+                            <div class="faq-question" data-aos="fade-up" data-aos-delay="600">
+                              <div class="accordion">
+                                <div class="columns is-mobile is-multiline is-centered is-vcentered vis">
+                                  <div class="column is-10-smart is-10-mobile is-10-tablet is-10-desktop is-10-widescreen is-10-fullhd">
+                                    <p>7. Имеет ли право студент менять профиль подготовки?</p>
+                                  </div>
+                                  <div class="column is-2-smart is-2-mobile is-2-tablet is-2-desktop is-2-widescreen is-2-fullhd has-text-right">
+                                    <div class="plus-opener">
+                                      <img src="https://pilot.spmi.ru/sites/default/files/images/face-plus.svg" class="face-plus">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="unvis accordion-active">
+                                <p>Да! В случае усердной учёбы, участия в общественной жизни вуза и достойного поведения в коллективе в течение первых 4 (четырёх) семестров и в рамках профильных специальностей после 5-6 семестров.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="block-webapp-content">
+                  <div class="views-element-container">
+                    <div class="js-view-dom-id-7a5c7c936e6577c8b22bca90bc5877fa8f877784f483d6a841e6774b9cf7e9b9"></div>
+                  </div>
+                </div>
+
+                <div id="block-contact-webform" class="contact-webform">
+                  <div class="columns is-centered is-mobile is-multiline">
+                    <div class="column is-12-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd faq-wrapper-column">
+
+                      <div class="columns is-mobile is-multiline is-centered">
+                        <div class="column is-12 section-title contact-webform-title p-0">
+                          <h3>Задать вопрос</h3>
+                        </div>
+                      </div>
+
+                      <div class="column is-12">
+                        <form class="webform-submission-form webform-submission-add-form webform-submission-visitors-questions-form webform-submission-visitors-questions-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-visitors-questions-add-form" action="/" method="post" id="webform-submission-visitors-questions-add-form" accept-charset="UTF-8" data-once="form-updated" data-drupal-form-fields="edit-fio,edit-email,edit-phone-number,edit-subject,edit-question,edit-actions-submit">
+                          <div class="columns metod_video webform-columns is-multiline" style="margin-top: 0; margin-bottom: 0;">
+                            <div class="column is-12-mobile is-12-tablet is-6-desktop is-6-widescreen is-6-fullhd">
+                              <div class="js-form-item form-item js-form-type-textfield form-item-fio js-form-item-fio form-no-label">
+                                <input autocomplete="off" data-webform-required-error="Поле ФИО обязательно для заполнения" data-drupal-selector="edit-fio" type="text" id="edit-fio" name="fio" value="" size="60" maxlength="255" placeholder="ФИО" class="form-text required" required="required" aria-required="true">
+                              </div>
+                              <div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+                                <input autocomplete="off" data-webform-required-error="Поле E-mail обязательно для заполнения" data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" placeholder="E-mail" class="form-email required" required="required" aria-required="true">
+                              </div>
+                              <div class="js-form-item form-item js-form-type-tel form-item-phone-number js-form-item-phone-number form-no-label">
+                                <input autocomplete="off" data-webform-required-error="Поле Телефон обязательно для заполнения" data-drupal-selector="edit-phone-number" type="tel" id="edit-phone-number" name="phone_number" value="" size="30" maxlength="128" placeholder="Телефон" class="form-tel required" required="required" aria-required="true">
+                              </div>
+                            </div>
+                            <div class="column is-12-mobile is-12-tablet is-6-desktop is-6-widescreen is-6-fullhd">
+                              <div class="js-form-item form-item js-form-type-select form-item-subject js-form-item-subject form-no-label">
+                                <select data-webform-required-error="Поле Тематика вопроса обязательно для заполнения" data-drupal-selector="edit-subject" id="edit-subject" name="subject" class="form-select required" required="required" aria-required="true"><option value="" selected="selected">Тематика вопроса</option><option value="1">Высшее инженерное образование</option><option value="2">Специализированное высшее образование</option><option value="3">Подготовка кадров высшей квалификации</option><option value="4">Дополнительные профессиональные компетенции</option><option value="5">Актовые лекции и профориентационные мероприятия</option><option value="6">Академические предприятия-партнёры</option></select>
+                              </div>
+                              <div class="js-form-item form-item js-form-type-textarea form-item-question js-form-item-question form-no-label">
+                                <div>
+                                  <textarea data-webform-required-error="Поле Ваш вопрос обязательно для заполнения" data-drupal-selector="edit-question" id="edit-question" name="question" rows="4" cols="60" placeholder="Ваш вопрос" class="form-textarea required" required="required" aria-required="true"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="columns metod_video contact-webform-bottom is-multiline" style="margin-top: 0; margin-bottom: 0;">
+                            <div class="column is-12-mobile is-12-tablet is-6-desktop is-6-widescreen is-6-fullhd">
+                              <div class="webform-bottom-columns">
+                                <input autocomplete="off" data-drupal-selector="form-rhb-ptddi7rtq4brqocneddngukbazqeprwybhrxelk" type="hidden" name="form_build_id" value="form-rHB_PTddi7RtQ4BrqOCNeDdNgUkBazqePrwYBhrxelk">
+                                <input data-drupal-selector="edit-webform-submission-visitors-questions-add-form" type="hidden" name="form_id" value="webform_submission_visitors_questions_add_form">
+                                <div id="edit-notification-text" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+                                  <p>Нажимая «Отправить», вы соглашаетесь с <a href="https://spmi.ru/politika-konfidencialnosti-gornogo-universiteta">политикой конфиденциальности</a> и даёте согласие на обработку ваших персональных данных.</p>
+                                </div>
+                                <div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                  <input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Отправить">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+        </main>
+
+        <div class="columns is-centered is-mobile is-multiline is-gapless footer_top_wrapper">
+          <div class="column is-11-desktop is-10-widescreen is-9-fullhd">
+            <picture>
+              <source media="(max-width: 499px)" srcset="https://pilot.spmi.ru/sites/default/files/images/footer_top_499.png">
+              <source media="(max-width: 768px)" srcset="https://pilot.spmi.ru/sites/default/files/images/footer_top_768.png">
+              <source media="(max-width: 1024px)" srcset="https://pilot.spmi.ru/sites/default/files/images/footer_top_1024.png">
+              <img src="https://pilot.spmi.ru/sites/default/files/images/footer_top.png">
+            </picture>
+          </div>
+        </div>
+
+        <footer role="contentinfo" id="contacts">
+          <div id="block-footer">
+            <div data-history-node-id="43" role="article" about="/node/43" class="columns is-centered is-mobile is-multiline footer-columns">
+              <div class="column is-11-smart is-11-mobile is-11-tablet is-11-desktop is-10-widescreen is-9-fullhd is-relative">
+                <div class="columns is-centered is-mobile is-multiline">
+                  <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                    <a href="https://spmi.ru/" title="Сайт горного университета">
+                      <img src="https://pilot.spmi.ru/sites/default/files/images/fulllogo.svg" alt="Главная">
+                    </a>
+                  </div>
+                  <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                    <div>
+                      <strong>Адрес</strong>
+                      <div class="footer-top-info address">199106, Санкт-Петербург, Васильевский<br>остров, 21 линия д.2;</div>
+                    </div>
+                  </div>
+                  <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                    <div>
+                      <strong>Время работы</strong>
+                      <div class="footer-top-info">Понедельник — Четверг: с 8.30 до 17.15<br>Пятница: с 8.30 до 16.15</div>
+                    </div>
+                  </div>
+                  <div class="column is-12 has-text-left">
+                    <div class="columns is-centered is-mobile is-multiline footer-bottom-columns reverse-columns">
+                      <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                        <p>© 2024 Санкт-Петербургский горный университет</p>
+                      </div>
+                      <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                        <div>
+                          <a href="https://spmi.ru/politika-konfidencialnosti-gornogo-universiteta">Политика конфиденциальности</a>
+                        </div>
+                      </div>
+                      <div class="column footer-column is-12-smart is-12-mobile is-4-tablet is-4-desktop is-4-widescreen is-4-fullhd has-text-left">
+                        <div>
+                          <a href="#">Политика использования cookie-файлов</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <script src="https://pilot.spmi.ru/themes/webapp/plugin/keen-slider/keen-slider.min.js?v=6.5.0"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/animations.js"></script>
+
+  </body>
+
+</html>
