@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Inter/Inter-Regular.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Regular.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Inter/Inter-Bold.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Bold.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/Inter/Inter-Italic.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Italic.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Italic.otf") format("opentype");
+}
+
+body {
+  background-color: #212830;
+  color: #E5DCDC;
+  font-family: Inter;
+}
+
+h1 {
+  margin-top: 2.75rem;
+}
+
+.layout-content {
+  padding: 0 1.875rem;
+}
+
+.play-col {
+  width: 1.25rem;
+}
+
+.play-col > a {
+  display: block;
+  text-align: center;
+}
+
+.play_status {
+  background:#fff;
+  border: .0625rem solid #d9d9d9;
+  border-radius: .125rem;
+  min-height: 1rem;
+  min-width: 1.0625rem;
+}
+
+.play_status:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: .25rem inset transparent;
+  border-bottom: .25rem inset transparent;
+  border-left: .4375rem solid #222;
+  border-right: 0;
+  margin: .25rem 0 0 .375rem;
+}
+
+.play_status.playing:after {
+  content: '';
+  border: 0;
+  border-left: .1875rem solid #2d2d2d;
+  border-right: .1875rem solid #2d2d2d;
+  height: .5rem;
+  margin: .25rem auto;
+  width: .0625rem;
+}
+
+.track_row {
+  display: flex;
+  align-items: center;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  margin-top: 1.125rem;
+  max-width: 24.125rem;
+}
+
+.playlist a {
+  text-decoration: none;
+  color: #E5DCDC;
+}
+
+.track-number-col {
+  padding: 0 .25rem 0 .125rem;
+}
+
+.track_number {
+  text-align: right;
+  min-width: 1rem;
+  margin-left: .3125rem;
+}
+
+.track_info {
+  display: flex;
+  align-items: center;
+}
+
+.track_duration {
+  padding-left: .5rem;
+  color: #CFBFBF;
+}
