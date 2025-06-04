@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Inter/Inter-Regular.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Regular.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Inter/Inter-Bold.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Bold.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/Inter/Inter-Italic.ttf') format('truetype');
+  src: local(''),
+  url('fonts/Inter/Inter-Italic.woff2') format("woff2"),
+  url("fonts/Inter/Inter-Italic.otf") format("opentype");
+}
+
+body {
+  color: #222222;
+  background-color: #e5e9f0;
+  line-height: initial;
+  font-family: Inter;
+}
+
+.footer-useful-links {
+  background-color: #003366;
+  border-radius: 1rem;
+  border: 1px solid #e5e9f0;
+  padding: 3rem 8.33vw;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+  .footer-useful-links {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-useful-links {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+.footer-useful-links a {
+  color: #ffffff;
+}
+
+.footer-dropdown-title span {
+  color: #ffffff;
+  line-height: 140%;
+}
+
+.footer-dropdown-title svg {
+  display: inline-block;
+  margin-left: .625rem;
+}
+
+.footer-useful-links.is-expanded svg {
+  transform: rotate(0.5turn);
+}
+
+.footer-info-area {
+  background-color: #e5e9f0;
+  padding: 3rem 8.33vw;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+  .footer-info-area {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-info-area {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.footer-info-area > :not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.footer-additional-info {
+  border-top: 1px solid #585858;
+}
+
+.law-info {
+  margin-top: 1.5rem;
+}
+
+.law-info a, .law-info p {
+  line-height: 140%;
+  letter-spacing: .01em;
+}
+
+.law-info a, .org-info a, .tour-info a {
+  color: #003366;
+}
+
+.law-info li:last-child {
+  color: #060607;
+}
+
+@media screen and (min-width: 1770px) {
+  .basic-info {
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .org-info {
+    padding-right: 2.5rem;
+  }
+}
+
+.basic-info > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.basic-info h4 {
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 140%;
+  margin-bottom: .375rem;
+}
+
+.basic-info p {
+  letter-spacing: .01em;
+  line-height: 140%;
+}
+
+.law-info li + li, .org-info li + li, .tour-info li + li {
+  margin-top: 1rem;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-column {
+  width: 25%;
+}
+
+@media screen and (min-width: 1408px) and (max-width: 1770px) {
+  .footer-columns {
+    column-gap: .9581rem;
+  }
+  .footer-column {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1407px) {
+  .footer-columns {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+  .footer-column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-columns {
+    display: block;
+  }
+  .footer-columns > div + div {
+    margin-top: 2rem;
+  }
+  .footer-column {
+    width: 100%;
+  }
+}
+
+.footer-social-networks {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer-payment-link {
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+.payment-button {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.payment-button p {
+  line-height: 120%;
+}
+
+.footer-hidden-menu {
+  margin-top: 1.5rem;
+  display: flex;
+  cursor: default;
+}
+
+.hidden-menu-column {
+  width: 25%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1407px) {
+  .footer-hidden-menu {
+    flex-wrap: wrap;
+    row-gap: .625rem;
+  }
+  .hidden-menu-column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-hidden-menu {
+    display: block;
+  }
+  .footer-hidden-menu > nav + nav {
+    margin-top: .625rem;
+  }
+  .hidden-menu-column {
+    width: 100%;
+  }
+}
+
+.footer-hidden-menu:not(.show) {
+  display: none;
+}
+
+.hidden-menu-column li + li {
+  margin-top: .625rem;
+}
+
+.hidden-menu-column a {
+  line-height: 140%;
+  letter-spacing: .01em;
+}
