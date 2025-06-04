@@ -35,6 +35,12 @@ body {
   font-family: Inter;
 }
 
+@media screen and (min-width: 1408px) {
+  .navbar-item img {
+    max-height: 100%;
+  }
+}
+
 .footer-useful-links {
   background-color: #003366;
   border-radius: 1rem;
