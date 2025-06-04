@@ -220,10 +220,11 @@ body {
   margin-top: 1.5rem;
   display: flex;
   cursor: default;
+  column-gap: 1.5rem;
 }
 
 .hidden-menu-column {
-  width: 25%;
+  flex: 1 1 calc(100%/4 - 4.5rem);
 }
 
 @media screen and (min-width: 769px) and (max-width: 1407px) {
@@ -232,7 +233,7 @@ body {
     row-gap: .625rem;
   }
   .hidden-menu-column {
-    width: 50%;
+    flex: 1 1 calc(100%/2 - 1.5rem);
   }
 }
 
