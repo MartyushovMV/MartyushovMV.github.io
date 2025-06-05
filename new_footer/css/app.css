@@ -199,17 +199,14 @@ body {
 
 .footer-payment-link {
   margin-top: 1rem;
-  width: 15rem;
 }
 
 .payment-button {
   background-color: #003366;
   color: #ffffff;
-  padding: 1.5rem 3rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  column-gap: 1.5rem;
+  padding: 1.25rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
 }
 
 .payment-button p {
