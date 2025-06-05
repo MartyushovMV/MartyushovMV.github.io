@@ -209,9 +209,15 @@ body {
   display: inline-block;
 }
 
-.payment-button p {
+.payment-button p, .minecite-link p {
   font-weight: 600;
   line-height: 120%;
+}
+
+.minecite-link {
+  display: flex;
+  align-items: center;
+  column-gap: .3125rem;
 }
 
 .footer-hidden-menu {
