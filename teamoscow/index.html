@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="app_css-css" href="./css/app.css" type="text/css" media="all">
+    <link rel="stylesheet" id="carousel_css-css" href="./css/carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" id="keenslider_css-css" href="./css/keen-slider.min.css" type="text/css" media="all">
+    <script type="text/javascript" src="./js/carousel.js" id="carousel_js-js" defer="defer"></script>
+  </head>
+
+  <body class="home blog wp-theme-moscowtea">
+
+    <header>
+
+      <section class="navbar-block">
+        <div class="primary-navigation">
+          <div class="primary-navigation-content">
+
+            <button aria-label="Menu" aria-expanded="false" data-target="mobile-menu-block" class="nav-burger">
+              <span class="btn-content">
+                <span class="btn-label">
+                  <div class="toggle-bar"></div>
+                  <div class="toggle-bar"></div>
+                  <div class="toggle-bar"></div>
+                </span>
+              </span>
+            </button>
+
+            <a href="#" rel="home">
+              <img src="./images/logo.svg" alt="Московское чаепитие" class="site-logo">
+            </a>
+
+            <nav class="main-menu">
+              <ul id="main-menu" class="navbar-list">
+                <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9">
+                  <a href="#about">О нас</a>
+                </li>
+                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                  <a href="#where_to_buy" aria-current="page">Где прикупить в Москве</a>
+                </li>
+                <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14">
+                  <a href="#payment_and_delivery_info">Оплата и доставка</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#shopping_cart" class="sc-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21L18.282 21.2811C18.1572 21.7072 17.7663 22 17.3223 22H6.67772C6.23368 22 5.84282 21.7072 5.71802 21.2811L3 12Z" stroke="#F20202"></path>
+                <rect x="1" y="8" width="22" height="4" rx="1" stroke="#F20202"></rect>
+                <path d="M11 2L4 8" stroke="#F20202" stroke-linecap="round"></path>
+                <path d="M13 2L20 8" stroke="#F20202" stroke-linecap="round"></path>
+                <path d="M7.5 14L9 19.5" stroke="#F20202" stroke-linecap="round"></path>
+                <path d="M16.5 14L15 19.5" stroke="#F20202" stroke-linecap="round"></path>
+                <path d="M12 14.5V19.5" stroke="#F20202" stroke-linecap="round"></path>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="subnavbar-block">
+        <nav class="categories-menu">
+          <ul id="categories-menu" class="subnavbar-list">
+            <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-15">
+              <a href="#honey" aria-current="page">Мёд</a>
+            </li>
+            <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-16">
+              <a href="#jam" aria-current="page">Варенье</a>
+            </li>
+            <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+              <a href="tel:+78123288496">Чай</a>
+            </li>
+            <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-18">
+              <a href="#sweets" aria-current="page">Сладости</a>
+            </li>
+            <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-19">
+              <a href="#dishes" aria-current="page">Посуда</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="mobile-menu-block" class="mobile-menu-wrapper">
+        <nav class="mobile-menu">
+          <ul id="mobile-menu" class="mobilenavbar-list">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9">
+              <a href="#about">О нас</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+              <a href="#where_to_buy" aria-current="page">Где прикупить в Москве</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14">
+              <a href="#payment_and_delivery_info">Оплата и доставка</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-cta-button">
+          <a href="#shop_categories">
+            <img src="./images/banner_button.png">
+          </a>
+        </div>
+      </section>
+
+    </header>
+
+    <div class="cv-content-wrapper">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+
+          <div class="block-main-banner">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/poster_360.jpg">
+              <source media="(min-width: 769px) and (max-width: 1023px)" srcset="./images/poster_768.jpg">
+              <img src="./images/poster.jpg">
+            </picture>
+            <div class="cta-button">
+              <a href="#shop_categories">
+                <img src="./images/banner_button.png">
+              </a>
+            </div>
+          </div>
+
+          <div class="banner-ribbon">
+            <picture>
+              <img src="./images/banner-ribbon.svg">
+            </picture>
+          </div>
+
+          <div class="main_pattern">
+            <video id="background-video" autoplay="" muted="" poster="./images/main_pattern.svg" onended="videoEnded(this)">
+              <source src="./images/main_pattern.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="top-divider" id="shop_categories">
+            <img src="./images/top_divider.png">
+          </div>
+
+          <div class="title-with-hat">
+            <h2>Прикупи да пригуби</h2>
+          </div>
+
+          <div class="block-carousel">
+            <div class="categories-slider-wrapper"></div>
+          </div>
+
+          <div class="partners-section">
+            <div class="partners-section-content">
+
+              <div class="partners-section-header">
+                <h2 class="mainpage-section-title">Прикупи у наших партнёров</h2>
+              </div>
+
+              <div id="partners-slider" class="keen-slider">
+                <div class="keen-slider__slide number-slide1 partner">
+                  <div class="partner-logo">
+                    <a href="https://av.ru/">
+                      <img src="./images/partner_1.png">
+                    </a>
+                  </div>
+                </div>
+                <div class="keen-slider__slide number-slide2 partner">
+                  <div class="partner-logo">
+                    <a href="https://shoko.ru/">
+                      <img src="./images/partner_2.png">
+                    </a>
+                  </div>
+                </div>
+                <div class="keen-slider__slide number-slide3 partner">
+                  <div class="partner-logo">
+                    <a href="https://brusnikacafe.ru/">
+                      <img src="./images/partner_3.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="articles-slider-section">
+
+            <div class="articles-top-ribbon"></div>
+
+            <div class="articles-slider-wrapper">
+
+              <div class="articles-slider-content">
+
+                <div id="articles-slider" class="keen-slider main_banner">
+
+                  <div class="keen-slider__slide number-slide1">
+                    <div class="poster">
+                      <figure class="image">
+                        <img loading="lazy" src="./images/slide_1.jpg" alt="">
+                      </figure>
+                    </div>
+                    <div class="slide-info">
+                      <p class="poster-text">«Зима в Москве»:<br>где попробовать новогодний купаж чая</p>
+                      <a href="#article1">
+                        <button class="poster-button">Подробнее</button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="keen-slider__slide number-slide2">
+                    <div class="poster">
+                      <figure class="image">
+                        <img loading="lazy" src="./images/slide_2.jpg" alt="">
+                      </figure>
+                    </div>
+                    <div class="slide-info">
+                      <p class="poster-text">Как выбирали чай жители и гости Москвы</p>
+                      <a href="#article2">
+                        <button class="poster-button">Узнать</button>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="articles-bottom-ribbon"></div>
+
+          </div>
+
+          <div class="halfpage-pattern-top">
+            <video id="animated-video" autoplay="" muted="" poster="./images/pearl.svg" onended="videoCompleted(this)">
+              <source src="./images/pearl.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="favorite-products-section">
+            <div class="favorites-block">
+              <div class="favorite-products-header">
+                <h2 class="mainpage-section-title">Любимое</h2>
+              </div>
+              <div id="favorites-slider" class="keen-slider">
+                <div class="keen-slider__slide number-slide1 favorite-product">
+                  <div class="product-image">
+                    <img src="./images/fav_1.png">
+                  </div>
+                  <div class="product-details">
+                    <p class="p-name">Чай травяной «Малиновый лист»</p>
+                    <p class="p-quantity">200 гр</p>
+                  </div>
+                  <div class="product-price">
+                    340 р. / 1 шт.
+                  </div>
+                  <div class="p-button-wrapper">
+                    <button class="add-to-cart-button">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                        <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                        <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="keen-slider__slide number-slide2 favorite-product">
+                  <div class="product-image">
+                    <img src="./images/fav_2.png">
+                  </div>
+                  <div class="product-details">
+                    <p class="p-name">Варенье «Чёрная смородина»</p>
+                    <p class="p-quantity">0,2 л</p>
+                  </div>
+                  <div class="product-price">
+                    340 р. / 1 шт.
+                  </div>
+                  <div class="p-button-wrapper">
+                    <button class="add-to-cart-button">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                        <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                        <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="keen-slider__slide number-slide3 favorite-product">
+                  <div class="product-image">
+                    <img src="./images/fav_3.png">
+                  </div>
+                  <div class="product-details">
+                    <p class="p-name">«Чай Москва» особый новогодний купаж</p>
+                    <p class="p-quantity">1 кг</p>
+                  </div>
+                  <div class="product-price">
+                    632 р. / 1 шт.
+                  </div>
+                  <div class="p-button-wrapper">
+                    <button class="add-to-cart-button">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                        <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                        <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="keen-slider__slide number-slide4 favorite-product">
+                  <div class="product-image">
+                    <img src="./images/fav_4.png">
+                  </div>
+                  <div class="product-details">
+                    <p class="p-name">Мёд гричишный с разнотравьем</p>
+                    <p class="p-quantity">0,2 л</p>
+                  </div>
+                  <div class="product-price">
+                    342 р. / 1 шт.
+                  </div>
+                  <div class="p-button-wrapper">
+                    <button class="add-to-cart-button">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                        <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                        <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                        <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                        <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-top-ribbon"></div>
+
+          <div class="map-section" id="where_to_buy">
+            <div class="map-section-content">
+              <div class="map-description">
+                <div class="map-description-text">
+                  <p class="map-title">Где прикупить в Москве</p>
+                  <p>Приобрести купаж «Москва» вы можете на флагманской площадке Тверской площади и в сети магазинов «Азбука вкуса»: согревающий и ароматный напиток в 125 кофейнях, листовой чай — в 145 магазинах.</p>
+                </div>
+                <div class="map-description-image">
+                  <img src="./images/map_pattern.png">
+                </div>
+              </div>
+              <div class="map" style="width: 100%; background-color: #F2FAE5;">
+                <img src="./images/map_image.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="fullpage-pattern-bottom">
+            <video id="middle-video" autoplay="" muted="" poster="./images/flower_pattern.svg" onended="videoStopped(this)">
+              <source src="./images/flower_pattern.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="top-divider">
+            <img src="./images/top_divider.png">
+          </div>
+
+          <div class="title-with-hat">
+            <h2>«Чай Москва». Особый купаж</h2>
+          </div>
+
+          <div class="mainpage-announcement-section">
+
+            <div class="announcement-section-content">
+
+              <div class="announcement-info">
+                <div class="announcement-photo">
+                  <img src="./images/announcement.png">
+                </div>
+                <div class="announcement-text">
+                  <p>В 2024-м году жители и гости Москвы методом дегустации выбрали чай, который теперь носит имя столицы — чай «Москва».</p>
+                  <p>Лидером голосования стал чёрный байховый чай с дольками и цедрой апельсина, бутонами роз, ягодами, лепестками василька и сафлора (дикого шафрана).</p>
+                  <p>Этот купаж был создан на основании изучения исторических документов и почти 30-ти летнего опыта реализации в Москве чая собственного производства. Чай «Москва» — чай, который уверенно можно назвать чаем Москвы, чаем москвичей.</p>
+                  <a href="https://russpass.ru/moskovskoe-chaepitie/chaj-moskva" class="more-link">
+                    <button class="more-button">
+                      <span>Как выбирали чай</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 11.999H0M24 11.999C17.3726 11.999 12 17.3716 12 23.999M24 11.999C17.3726 11.999 12 6.62644 12 -0.000976562" stroke="#F20202"></path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="announcement-section-products">
+                <div class="announcement-products-wrapper">
+                  <div id="announcement-slider" class="keen-slider">
+                    <div class="keen-slider__slide number-slide1 announcement-product">
+                      <div class="product-image">
+                        <img src="./images/sel_1.png">
+                      </div>
+                      <div class="product-details">
+                        <p class="p-name">«Чай Москва» особый новогодний купаж</p>
+                        <p class="p-quantity">1 кг</p>
+                      </div>
+                      <div class="product-price">
+                        3860 р. / 1 шт.
+                      </div>
+                      <div class="p-button-wrapper">
+                        <button class="add-to-cart-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                            <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                            <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide2 announcement-product">
+                      <div class="product-image">
+                        <img src="./images/fav_3.png">
+                      </div>
+                      <div class="product-details">
+                        <p class="p-name">«Чай Москва» особый новогодний купаж</p>
+                        <p class="p-quantity">100 гр</p>
+                      </div>
+                      <div class="product-price">
+                        632 р. / 1 шт.
+                      </div>
+                      <div class="p-button-wrapper">
+                        <button class="add-to-cart-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                            <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                            <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide3 announcement-product">
+                      <div class="product-image">
+                        <img src="./images/sel_3.png">
+                      </div>
+                      <div class="product-details">
+                        <p class="p-name">«Чай Москва» особый новогодний купаж</p>
+                        <p class="p-quantity">100 гр</p>
+                      </div>
+                      <div class="product-price">
+                        450 р. / 1 шт.
+                      </div>
+                      <div class="p-button-wrapper">
+                        <button class="add-to-cart-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                            <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                            <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide4 announcement-product">
+                      <div class="product-image">
+                        <img src="./images/sel_4.png">
+                      </div>
+                      <div class="product-details">
+                        <p class="p-name">«Чай Москва» особый новогодний купаж</p>
+                        <p class="p-quantity">3 гр</p>
+                      </div>
+                      <div class="product-price">
+                        26 р. / 1 шт.
+                      </div>
+                      <div class="p-button-wrapper">
+                        <button class="add-to-cart-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12.001H21L18.282 21.282C18.1572 21.7082 17.7663 22.001 17.3223 22.001H6.67772C6.23368 22.001 5.84282 21.7082 5.71802 21.282L3 12.001Z" stroke="white"/>
+                            <rect x="1" y="8.00098" width="22" height="4" rx="1" stroke="white"/>
+                            <path d="M11 2.00098L4 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M13 2.00098L20 8.00098" stroke="white" stroke-linecap="round"/>
+                            <path d="M7.5 14.001L9 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M16.5 14.001L15 19.501" stroke="white" stroke-linecap="round"/>
+                            <path d="M12 14.501V19.501" stroke="white" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </main><!-- #main -->
+      </div><!-- #primary -->
+
+    </div><!-- .cv-content-wrapper -->
+
+  <div class="footer-ribbon"></div>
+    
+  <footer class="bd-footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <p class="footer-column-name">О нас</p>
+          <ul id="footer-menu-1" class="list-unstyled">
+            <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
+              <a href="https://russpass.ru/moskovskoe-chaepitie">Блог</a>
+            </li>
+            <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+              <a href="#fests">Фестивали</a>
+            </li>
+            <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
+              <a href="#job_openings">Вакансии</a>
+            </li>
+            <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23">
+              <a href="#franchise">Франшиза</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-column-name">Покупателям</p>
+          <ul id="footer-menu-2" class="list-unstyled">
+            <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24">
+              <a href="#addresses">Адреса магазинов</a>
+            </li>
+            <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35">
+              <a href="#payment_and_delivery_info">Оплата и доставка</a>
+            </li>
+            <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36">
+              <a href="#help">Помощь</a>
+            </li>
+            <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37">
+              <a href="#contract">Договор оферты</a>
+            </li>
+            <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38">
+              <a href="#privacy-policy">Политика конфиденциальности</a>
+            </li>
+            <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39">
+              <a href="#gift_certificates">Подарочные сертификаты</a>
+            </li>
+            <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
+              <a href="#orders_safety">Безопасность покупок</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-column-name">Продукция</p>
+          <ul id="footer-menu-2" class="list-unstyled">
+            <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25">
+              <a href="#tea">Чай</a>
+            </li>
+            <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27">
+              <a href="#honey">Мёд</a>
+            </li>
+            <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28">
+              <a href="#jam">Варенье</a>
+            </li>
+            <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29">
+              <a href="#sweets">Сладости</a>
+            </li>
+            <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30">
+              <a href="#dishes">Посуда</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-column-name">Контакты</p>
+          <ul id="footer-menu-4" class="list-unstyled">
+            <li id="menu-item-26" class="telephone">
+              <a href="tel:+79999999999">+7-999-999-99-99</a>
+            </li>
+            <li id="menu-item-31" class="email">
+              <a href="mailto:info@teamoscow.ru">info@teamoscow.ru</a>
+            </li>
+            <li id="menu-item-32" class="work-hours">
+              <span>9:00 — 18:00</span>
+            </li>
+            <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33">
+              <a href="#requisites">Реквизиты</a>
+            </li>
+            <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34">
+              <a href="#feedback">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright-text">© «Московское чаепитие», 2025. Все права защищены.</p>
+    </div>
+  </footer>
+
+    <script src="./js/keen-slider.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+
+</html>
