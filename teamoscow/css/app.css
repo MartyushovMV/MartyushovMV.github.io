@@ -615,12 +615,12 @@ button {
 .main_pattern {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1439px) {
   .main_pattern {
-    margin-bottom: 3.125rem;
+    margin: 3.125rem 0;
   }
 }
 
