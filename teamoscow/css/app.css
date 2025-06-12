@@ -1114,7 +1114,6 @@ button {
 }
 
 .map-section {
-  background-color: rgb(193, 157, 96);
   display: flex;
   justify-content: center;
 }
@@ -1179,7 +1178,7 @@ button {
 
 .map-description-text {
   width: 50%;
-  color: #ffffff;
+  color: #272727;
 }
 
 @media screen and (max-width: 1023px) {
