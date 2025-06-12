@@ -23,23 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function videoEnded(video) {
-  let poster_1 = '<picture><img src="./images/main_pattern.svg"></picture>';
-  document.getElementById('background-video').outerHTML = poster_1;
-};
-
-function videoCompleted(video) {
-  let poster_2 = '<picture><img src="./images/pearl.svg"></picture>';
-  document.getElementById('animated-video').outerHTML = poster_2;
+  let poster_1 = '<picture><img src="./images/pearl.svg"></picture>';
+  document.getElementById('animated-video').outerHTML = poster_1;
 };
 
 function videoStopped(video) {
-  let poster_3 = '<picture><img src="./images/flower_pattern.svg"></picture>';
-  document.getElementById('middle-video').outerHTML = poster_3;
+  let poster_2 = '<picture><img src="./images/flower_pattern.svg"></picture>';
+  document.getElementById('middle-video').outerHTML = poster_2;
 };
 
 function videoFinished(video) {
-  let poster_4 = '<picture><img src="./images/apple.svg"></picture>';
-  document.getElementById('bottom-video').outerHTML = poster_4;
+  let poster_3 = '<picture><img src="./images/apple.svg"></picture>';
+  document.getElementById('bottom-video').outerHTML = poster_3;
 };
 
 
@@ -347,18 +342,3 @@ if (document.querySelector('#favorites-slider')) {
   }, [navigation])
 
 }
-
-var slider_new = new KeenSlider("#announcement-slider", {
-  breakpoints: {
-    "(min-width: 1024px)": {
-      slides: { perView: 4, spacing: 20 }
-    },
-    "(min-width: 1440px)": {
-      slides: { perView: 4, spacing: 40 }
-    },
-  },
-  loop: true,
-  mode: "free-snap",
-  drag: false,
-  slides: { perView: 1 },
-})
