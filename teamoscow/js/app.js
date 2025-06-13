@@ -12,10 +12,9 @@ async function initMap() {
                 center: [55.76, 37.64],
                 zoom: 10
             }
-        }
+        },
+        [new YMapDefaultSchemeLayer({})]
     );
-
-    map.addChild(new YMapDefaultSchemeLayer());
 }
 
 document.addEventListener('DOMContentLoaded', () => {
