@@ -1154,6 +1154,10 @@ button {
   }
 }
 
+.map {
+  width: 100%;
+  height: 20px;
+}
 
 @media (max-width: 1439px) {
   .map {
