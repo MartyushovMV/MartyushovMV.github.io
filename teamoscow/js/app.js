@@ -9,7 +9,7 @@ ymaps3.ready.then(() => {
     }
   });
 
-}
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
