@@ -3,9 +3,7 @@ ymaps3.ready.then(() => {
   const map = new ymaps3.YMap(document.getElementById('map'), {
     location: {
       center: [55.76, 37.64],
-      zoom: 10,
-      maxZoom: 15,
-      minZoom: 4
+      zoom: 10
     }
   });
 
