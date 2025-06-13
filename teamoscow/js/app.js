@@ -1,13 +1,22 @@
-ymaps3.ready.then(() => {
+initMap();
 
-  const map = new ymaps3.YMap(document.getElementById('map'), {
-    location: {
-      center: [55.76, 37.64],
-      zoom: 10
-    }
-  });
+async function initMap() {
+    await ymaps3.ready;
 
-});
+    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+    const map = new YMap(
+        document.getElementById('map'),
+        {
+            location: {
+                center: [55.76, 37.64],
+                zoom: 10
+            }
+        }
+    );
+
+    map.addChild(new YMapDefaultSchemeLayer());
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
