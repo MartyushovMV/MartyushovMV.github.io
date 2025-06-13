@@ -1,64 +1,15 @@
-ymaps.ready(init);
+ymaps3.ready.then(() => {
 
-  function init() {
-     
-    var myMap = new ymaps.Map("map", {
-          // Порядок по умолчанию: «широта, долгота».
-          center: [59.941759,30.230429],
-          zoom: 13,
-          controls: [
-          'searchControl',
-          'typeSelector',
-          'zoomControl',
-          'geolocationControl'
-          ]
-      });
+  const map = new ymaps3.YMap(document.getElementById('map'), {
+    location: {
+      center: [55.76, 37.64],
+      zoom: 10,
+      maxZoom: 15,
+      minZoom: 4
+    }
+  });
 
-    myMap.behaviors.disable( [ 'scrollZoom' ] );
-
-    var myGeoObjects = new ymaps.GeoObjectCollection({}, {
-        preset: "islands#blueStretchyIcon",
-        strokeWidth: 4,
-        geodesic: true
-    });
-
-    // Добавление меток и полилинии в коллекцию.
-    myGeoObjects.add(new ymaps.Placemark([59.941759,30.230429], 
-      {
-        iconCaption: '',
-        iconContent: 'МФК Горный',
-        hintContent: '',
-        balloonContentHeader: 'Многофункциональный комплекс «Горный»',
-        balloonContentFooter: '',
-        balloonContentBody: '<p>Россия, 199406, г. Санкт-Петербург,<br \/>Васильевский остров, ул. Наличная, д. 28\/16<\/p>'
-      },
-      {
-        // preset: 'islands#violetStretchyIcon'
-        preset: 'islands#blueStretchyIcon'
-      }));
-    myGeoObjects.add(new ymaps.Placemark([59.928983,30.268689],
-      {
-        iconCaption: '',
-        iconContent: 'Горный университет',
-        hintContent: '',
-        balloonContentHeader: 'Санкт-Петербургский горный университет',
-        balloonContentFooter: '',
-        balloonContentBody: '<p>Россия, 199406, г. Санкт-Петербург,<br \/>Васильевский остров, 22 линия д.1<\/p>'
-      },
-      {
-        // preset: 'islands#blueStretchyIcon'
-        preset: 'islands#blueStretchyIcon'
-      }));
-
-    // Добавление коллекции на карту.
-    myMap.geoObjects.add(myGeoObjects);
-    // Установка центра и масштаба карты таким образом, чтобы вся коллекция была видна.
-    myMap.setBounds(myGeoObjects.getBounds());
-
-
-
-  }
-
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
