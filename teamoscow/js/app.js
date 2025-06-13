@@ -9,7 +9,7 @@ async function initMap() {
         document.getElementById('map'),
         {
             location: {
-                center: [55.76, 37.64],
+                center: [37.623082, 55.75254],
                 zoom: 10
             }
         },
