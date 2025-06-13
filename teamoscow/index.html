@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="https://api-maps.yandex.ru">
+    <link rel="preconnect" href="https://api-maps.yandex.ru">
     <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" id="app_css-css" href="./css/app.css" type="text/css" media="all">
     <link rel="stylesheet" id="carousel_css-css" href="./css/carousel.css" type="text/css" media="all">
@@ -11,6 +13,7 @@
     <link rel="icon" href="/teamoscow/favicon-150x150.png" sizes="32x32">
     <link rel="icon" href="/teamoscow/favicon-300x300.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/teamoscow/favicon-300x300.png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2b15bdac-7b1f-46a4-af8f-3cac17c9e767&lang=ru_RU" type="text/javascript"></script>
   </head>
 
   <body class="home blog wp-theme-moscowtea">
@@ -421,9 +424,7 @@
                   <p class="map-title">Где прикупить в Москве</p>
                   <p>Приобрести купаж «Москва» вы можете на флагманской площадке Тверской площади и в сети магазинов «Азбука вкуса»: согревающий и ароматный напиток в 125 кофейнях, листовой чай — в 145 магазинах.</p>
                 </div>
-                <div class="map-description-image">
-                  <img src="./images/map_pattern.png">
-                </div>
+                <div class="map-description-image" id="map"></div>
               </div>
               <div class="map" style="width: 100%; background-color: #F2FAE5;">
                 <img src="./images/map_image.jpg">
