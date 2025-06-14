@@ -469,12 +469,11 @@ button {
 
 @media screen and (max-width: 768px) {
   .footer-row {
-    flex-wrap: wrap;
-    column-gap: 1.25rem;
-    row-gap: 2.5rem;
+    display: block;
+    margin-bottom: 3rem;
   }
-  .footer-col {
-    flex: 1 1 calc(100%/2 - 1.25rem);
+  .footer-row > div + div {
+    margin-top: 3rem;
   }
 }
 
