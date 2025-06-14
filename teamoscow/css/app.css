@@ -483,6 +483,12 @@ button {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer-pattern-col {
+    display: none;
+  }
+}
+
 .copyright-text {
   font-size: .75rem;
   margin: 0;
