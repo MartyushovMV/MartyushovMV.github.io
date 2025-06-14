@@ -1159,12 +1159,15 @@ button {
   height: 38.75rem;
 }
 
-@media (max-width: 1439px) {
+@media screen and (min-width: 769px) and (max-width: 1439px) {
   .map {
     min-height: 40vh;
   }
-  .map img {
-    display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    height: calc(100vw - 2rem);
   }
 }
 
