@@ -1867,3 +1867,8 @@ button {
 .sc-link {
   line-height: .75;
 }
+
+.balloon__image {
+  width: 120px;
+  height: 120px;
+}

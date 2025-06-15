@@ -24,7 +24,7 @@ async function initMap() {
       const imageElement = document.createElement('img');
       imageElement.src = './images/waves.png';
       imageElement.alt = 'waves';
-      imageElement.classList.add('image');
+      imageElement.classList.add('balloon__image');
 
       const popupContentElement = document.createElement('div');
       popupContentElement.classList.add('popup__content');
