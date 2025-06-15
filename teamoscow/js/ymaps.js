@@ -147,6 +147,7 @@ async function initMap() {
     );
 
     popupWithImage = new YMapDefaultMarker({
+      iconName: 'waterpark',
       coordinates: [38.090814, 55.608317],
       onClick() {
         popupWithImage.update({popup: {show: true}});
@@ -155,6 +156,7 @@ async function initMap() {
     });
 
     popupWithButtons = new YMapDefaultMarker({
+      iconName: 'boat_station',
       coordinates: [37.610524, 55.762051],
       onClick() {
         popupWithButtons.update({popup: {show: true}});
