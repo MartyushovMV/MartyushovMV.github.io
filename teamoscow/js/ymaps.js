@@ -22,7 +22,7 @@ async function initMap() {
       popupElement.classList.add('popup');
 
       const imageElement = document.createElement('img');
-      imageElement.src = '../images/waves.png';
+      imageElement.src = './images/waves.png';
       imageElement.alt = 'waves';
       imageElement.classList.add('image');
 
