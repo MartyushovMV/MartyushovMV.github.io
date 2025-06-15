@@ -156,7 +156,7 @@ async function initMap() {
     });
 
     popupWithButtons = new YMapDefaultMarker({
-      iconName: 'food',
+      iconName: 'restaurant',
       coordinates: [37.610524, 55.762051],
       onClick() {
         popupWithButtons.update({popup: {show: true}});
