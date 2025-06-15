@@ -13,8 +13,6 @@ async function initMap() {
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
-    const marker = new YMapDefaultMarker({coordinates: [55.608317, 38.090814], draggable: false});
-
     const map = new YMap(
       document.getElementById('map'),
       {
@@ -29,7 +27,13 @@ async function initMap() {
       ]
     );
 
-    map.addChild(marker);
+    map.addChild(
+      new YMapDefaultMarker({
+        coordinates: [55.608317, 38.090814],
+        title: 'Hello World!',
+        subtitle: 'kind and bright'
+      })
+    );
 
     const controls = new YMapControls({position: 'right'});
     controls.addChild(new YMapZoomControl({}));
