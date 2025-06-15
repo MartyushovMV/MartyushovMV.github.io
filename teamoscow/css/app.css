@@ -216,7 +216,7 @@ button {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .categories-menu {
     width: auto;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
   }
 }
 
