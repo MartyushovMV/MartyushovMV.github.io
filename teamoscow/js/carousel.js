@@ -133,17 +133,17 @@ class Carousel {
           container.append(carouselItem);
           break;
         case 5:
-          let itemLnk4 = document.createElement('a');
-          let itemImg4 = document.createElement('img');
-          itemLnk4.append(itemImg4);
-          itemImg4.src = 'image_41.jpg';
-          itemImg4.setAttribute('loading', 'eager');
-          let imgName4 = document.createElement('div');
-          itemLnk4.append(imgName4);
-          imgName4.className = 'category-title';
-          imgName4.textContent = 'Травяные сборы';
-          carouselItem.append(itemLnk4);
-          itemLnk4.href = "#herbals";
+          let itemLnk5 = document.createElement('a');
+          let itemImg5 = document.createElement('img');
+          itemLnk5.append(itemImg5);
+          itemImg5.src = 'image_41.jpg';
+          itemImg5.setAttribute('loading', 'eager');
+          let imgName5 = document.createElement('div');
+          itemLnk5.append(imgName5);
+          imgName5.className = 'category-title';
+          imgName5.textContent = 'Травяные сборы';
+          carouselItem.append(itemLnk5);
+          itemLnk5.href = "#herbals";
           container.append(carouselItem);
           break;
       }
