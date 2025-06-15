@@ -22,7 +22,7 @@ async function initMap() {
       popupElement.classList.add('popup');
 
       const imageElement = document.createElement('img');
-      imageElement.src = '../waves.png';
+      imageElement.src = '../images/waves.png';
       imageElement.alt = 'waves';
       imageElement.classList.add('image');
 
@@ -156,7 +156,7 @@ async function initMap() {
     });
 
     popupWithButtons = new YMapDefaultMarker({
-      iconName: 'restaurant',
+      iconName: 'boat_station',
       coordinates: [37.610524, 55.762051],
       onClick() {
         popupWithButtons.update({popup: {show: true}});
