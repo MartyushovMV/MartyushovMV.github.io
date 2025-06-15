@@ -1080,14 +1080,14 @@ button {
 
 
 
-.favorite-products-header {
+.favorite-products-header, .new-products-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 3.125rem 0 3.125rem 0;
 }
 
-.favorite-products-header .arrow {
+.favorite-products-header .arrow, .new-products-header .arrow {
   width: 3rem;
   height: 4rem;
 }
