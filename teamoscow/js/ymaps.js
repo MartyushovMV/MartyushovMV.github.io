@@ -6,21 +6,14 @@ async function initMap() {
     const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = ymaps3;
 
     ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', [
-      '@yandex/ymaps3-default-ui-theme@0.0.19'
+      '@yandex/ymaps3-default-ui-theme@latest'
     ]);
 
     const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
-    const defaultMarker = new YMapDefaultMarker({
-      title: 'Привет мир!',
-      subtitle: 'Добрый и светлый'
-    });
-
-    const content = document.createElement('div');
-    const marker = new ymaps3.YMapMarker(content);
-    content.innerHTML = '<div>Тут может быть все что угодно</div>';
+    const marker = new YMapDefaultMarker({coordinates: [55.608317, 38.090814], draggable: false});
 
     const map = new YMap(
       document.getElementById('map'),
@@ -32,11 +25,10 @@ async function initMap() {
       },
       [
         new YMapDefaultSchemeLayer({}),
-        new YMapDefaultFeaturesLayer({zIndex: 1800})
+        new YMapDefaultFeaturesLayer({})
       ]
     );
 
-    map.addChild(defaultMarker)
     map.addChild(marker);
 
     const controls = new YMapControls({position: 'right'});
