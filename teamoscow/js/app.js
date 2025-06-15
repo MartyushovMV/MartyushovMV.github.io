@@ -1,6 +1,7 @@
 initMap();
 
 async function initMap() {
+    import type {YMapLocationRequest, YMapComplexEntity} from '@yandex/ymaps3-types';
     await ymaps3.ready;
 
     const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = ymaps3;
@@ -11,6 +12,8 @@ async function initMap() {
 
     const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
+
+    export const COMMON_LOCATION_PARAMS: YMapLocationRequest = {easing: 'ease-in-out', duration: 2000, zoom: 15};
 
     const map = new YMap(
         document.getElementById('map'),
