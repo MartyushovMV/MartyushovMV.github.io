@@ -316,6 +316,7 @@ button {
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
+  font-size: .875rem;
 }
 
 @media screen and (max-width: 768px) {
