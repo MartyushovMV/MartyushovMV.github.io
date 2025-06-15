@@ -978,9 +978,6 @@ button {
 
 
 
-.articles-slider-content img {
-  line-height: 0.75;
-}
 
 @media screen and (max-width: 1439px) {
   .articles-slider-content img {
