@@ -1,33 +1,3 @@
-initMap();
-
-async function initMap() {
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer, YMapControls} = ymaps3;
-
-    ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', [
-      '@yandex/ymaps3-default-ui-theme@0.0.19'
-    ]);
-
-    const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
-
-    const map = new YMap(
-        document.getElementById('map'),
-        {
-            location: {
-                center: [37.623082, 55.75254],
-                zoom: 10
-            }
-        },
-        [new YMapDefaultSchemeLayer({})]
-    );
-
-    map.addChild(
-      new YMapControls({position: 'right'}).addChild(new YMapZoomControl({}))
-    );
-
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const navbarBurger = document.querySelector('.nav-burger');
@@ -61,6 +31,7 @@ function videoFinished(video) {
   let poster_2 = '<picture><img src="./images/pearl.svg"></picture>';
   document.getElementById('animated-video').outerHTML = poster_2;
 };
+
 
 
 
@@ -283,90 +254,6 @@ if (document.querySelector('#articles-slider')) {
   }, navigation])
 }
 
-if (document.querySelector('#novelties-slider')) {
-  function navigation(slider) {
-    let arrowLeft, arrowRight, arrowsWrapper
-
-    function markup(remove) {
-      arrowMarkup(remove)
-    }
-
-    function removeElement(elment) {
-      elment.parentNode.removeChild(elment)
-    }
-
-    function createDiv(className) {
-      var div = document.createElement("div")
-      var classNames = className.split(" ")
-      classNames.forEach((name) => div.classList.add(name))
-      return div
-    }
-
-    function arrowMarkup(remove) {
-      if (remove) {
-        removeElement(arrowLeft)
-        removeElement(arrowRight)
-        return
-      }
-      arrowLeft = createDiv("arrow arrow--left")
-      arrowLeft.addEventListener("click", () => slider.prev())
-      arrowRight = createDiv("arrow arrow--right")
-      arrowRight.addEventListener("click", () => slider.next())
-
-      arrowsWrapper = createDiv("arrows-wrapper")
-
-      arrowsWrapper.appendChild(arrowLeft)
-      arrowsWrapper.appendChild(arrowRight)
-
-      let noveltiesHeader = document.querySelector('.new-products-header')
-
-      noveltiesHeader.appendChild(arrowsWrapper)
-    }
-
-    function updateClasses() {
-      var slide = slider.track.details.rel
-      slide === 0
-        ? arrowLeft.classList.add("arrow--disabled")
-        : arrowLeft.classList.remove("arrow--disabled")
-      slide === slider.track.details.slides.length - 1
-        ? arrowRight.classList.add("arrow--disabled")
-        : arrowRight.classList.remove("arrow--disabled")
-    }
-
-    slider.on("created", () => {
-      markup()
-      updateClasses()
-    })
-    slider.on("optionsChanged", () => {
-      markup(true)
-      markup()
-      updateClasses()
-    })
-    slider.on("slideChanged", () => {
-      updateClasses()
-    })
-    slider.on("destroyed", () => {
-      markup(true)
-    })
-  }
-
-  var slider_new = new KeenSlider("#novelties-slider", {
-    breakpoints: {
-      "(min-width: 769px)": {
-        slides: { perView: 2, spacing: 20 },
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 4, spacing: 20 },
-      },
-    },
-    loop: true,
-    mode: "free-snap",
-    drag: false,
-    slides: { perView: 4, spacing: 40 },
-  }, [navigation])
-
-}
-
 if (document.querySelector('#favorites-slider')) {
   function navigation(slider) {
     let arrowLeft, arrowRight, arrowsWrapper
@@ -450,3 +337,4 @@ if (document.querySelector('#favorites-slider')) {
   }, [navigation])
 
 }
+
