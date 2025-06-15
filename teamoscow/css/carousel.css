@@ -118,6 +118,11 @@
   opacity: 0.4;
 }
 
+.carousel-item-6 {
+  left: 86%;
+  opacity: 0.4;
+}
+
 
 
 
@@ -177,7 +182,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .carousel-item-1, .carousel-item-2, .carousel-item-4, .carousel-item-5 {
+  .carousel-item-1, .carousel-item-2, .carousel-item-4, .carousel-item-5, .carousel-item-6 {
     display: none;
   }
 }
