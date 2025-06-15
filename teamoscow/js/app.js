@@ -53,20 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function videoEnded(video) {
-  let poster_1 = '<picture><img src="./images/pearl.svg"></picture>';
-  document.getElementById('animated-video').outerHTML = poster_1;
-};
-
-function videoStopped(video) {
-  let poster_2 = '<picture><img src="./images/flower_pattern.svg"></picture>';
-  document.getElementById('middle-video').outerHTML = poster_2;
+  let poster_1 = '<picture><img src="./images/flower_pattern.svg"></picture>';
+  document.getElementById('middle-video').outerHTML = poster_1;
 };
 
 function videoFinished(video) {
-  let poster_3 = '<picture><img src="./images/apple.svg"></picture>';
-  document.getElementById('bottom-video').outerHTML = poster_3;
+  let poster_2 = '<picture><img src="./images/pearl.svg"></picture>';
+  document.getElementById('animated-video').outerHTML = poster_2;
 };
-
 
 
 
@@ -324,9 +318,9 @@ if (document.querySelector('#novelties-slider')) {
       arrowsWrapper.appendChild(arrowLeft)
       arrowsWrapper.appendChild(arrowRight)
 
-      let favsHeader = document.querySelector('.new-products-header')
+      let noveltiesHeader = document.querySelector('.new-products-header')
 
-      favsHeader.appendChild(arrowsWrapper)
+      noveltiesHeader.appendChild(arrowsWrapper)
     }
 
     function updateClasses() {
