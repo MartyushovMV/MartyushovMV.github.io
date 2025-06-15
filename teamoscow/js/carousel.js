@@ -24,9 +24,13 @@ class Carousel {
       {
         'id': '5',
         'src': '',
+      },
+      {
+        'id': '6',
+        'src': '',
       }
     ];
-    this.carouselInView = [1, 2, 3, 4, 5];
+    this.carouselInView = [1, 2, 3, 4, 5, 6];
     this.carouselContainer;
   }
 
@@ -63,7 +67,7 @@ class Carousel {
           let itemImg0 = document.createElement('img');
           itemLnk0.append(itemImg0);
           itemImg0.src = 'image_39.jpg';
-          itemImg0.setAttribute('eager', 'lazy');
+          itemImg0.setAttribute('loading', 'eager');
           let imgName0 = document.createElement('div');
           itemLnk0.append(imgName0);
           imgName0.className = 'category-title';
@@ -77,7 +81,7 @@ class Carousel {
           let itemImg1 = document.createElement('img');
           itemLnk1.append(itemImg1);
           itemImg1.src = 'image_36.jpg';
-          itemImg1.setAttribute('eager', 'lazy');
+          itemImg1.setAttribute('loading', 'eager');
           let imgName1 = document.createElement('div');
           itemLnk1.append(imgName1);
           imgName1.className = 'category-title';
@@ -91,7 +95,7 @@ class Carousel {
           let itemImg2 = document.createElement('img');
           itemLnk2.append(itemImg2);
           itemImg2.src = 'image_38.jpg';
-          itemImg2.setAttribute('eager', 'lazy');
+          itemImg2.setAttribute('loading', 'eager');
           let imgName2 = document.createElement('div');
           itemLnk2.append(imgName2);
           imgName2.className = 'category-title';
@@ -105,7 +109,7 @@ class Carousel {
           let itemImg3 = document.createElement('img');
           itemLnk3.append(itemImg3);
           itemImg3.src = 'image_37.jpg';
-          itemImg3.setAttribute('eager', 'lazy');
+          itemImg3.setAttribute('loading', 'eager');
           let imgName3 = document.createElement('div');
           itemLnk3.append(imgName3);
           imgName3.className = 'category-title';
@@ -119,7 +123,7 @@ class Carousel {
           let itemImg4 = document.createElement('img');
           itemLnk4.append(itemImg4);
           itemImg4.src = 'image_40.jpg';
-          itemImg4.setAttribute('eager', 'lazy');
+          itemImg4.setAttribute('loading', 'eager');
           let imgName4 = document.createElement('div');
           itemLnk4.append(imgName4);
           imgName4.className = 'category-title';
@@ -128,13 +132,27 @@ class Carousel {
           itemLnk4.href = "#sweets";
           container.append(carouselItem);
           break;
+        case 5:
+          let itemLnk4 = document.createElement('a');
+          let itemImg4 = document.createElement('img');
+          itemLnk4.append(itemImg4);
+          itemImg4.src = 'image_41.jpg';
+          itemImg4.setAttribute('loading', 'eager');
+          let imgName4 = document.createElement('div');
+          itemLnk4.append(imgName4);
+          imgName4.className = 'category-title';
+          imgName4.textContent = 'Травяные сборы';
+          carouselItem.append(itemLnk4);
+          itemLnk4.href = "#herbals";
+          container.append(carouselItem);
+          break;
       }
       
       // Add item attributes
       carouselItem.className = `carousels-item carousel-item-${index + 1}`;
 
       //carouselItem.src = item.src;
-      //carouselItem.setAttribute('eager', 'lazy');
+      //carouselItem.setAttribute('loading', 'eager');
 
       // Used to keep track of carousel items, infinite items possible in carousel however min 5 items required
       carouselItem.setAttribute('data-index', `${index + 1}`);
