@@ -29,9 +29,9 @@ async function initMap() {
 
     map.addChild(
       new YMapDefaultMarker({
-        coordinates: [55.608317, 38.090814],
-        title: 'Hello World!',
-        subtitle: 'kind and bright'
+        coordinates: [38.090814, 55.608317],
+        title: 'Шоколадница',
+        subtitle: 'МО Жуковский (ТЦ Океан)'
       })
     );
 
