@@ -3,7 +3,7 @@ initMap();
 async function initMap() {
     await ymaps3.ready;
 
-    const {YMap, YMapDefaultSchemeLayer, YMapControls} = ymaps3;
+    const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls} = ymaps3;
 
     ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', [
       '@yandex/ymaps3-default-ui-theme@0.0.19'
@@ -19,11 +19,16 @@ async function initMap() {
                 zoom: 10
             }
         },
-        [new YMapDefaultSchemeLayer({})]
+        [
+          new YMapDefaultSchemeLayer({}),
+          new YMapDefaultFeaturesLayer({})
+        ]
     );
 
     map.addChild(
-      new YMapControls({position: 'right'}).addChild(new YMapZoomControl({}))
+      new YMapControls({position: 'right'})
+      .addChild(new YMapZoomControl({}))
+      .addChild(new YMapGeolocationControl(COMMON_LOCATION_PARAMS))
     );
 
 }
