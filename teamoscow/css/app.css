@@ -513,7 +513,7 @@ button {
     transition: .2s all;
   }
 
-  .footer-col:not(.is-active) > .footer-column-name:after {
+  .footer-col.is-active > .footer-column-name:after {
     -webkit-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     transform: rotate(-135deg);
