@@ -21,6 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+
+  const footerToggles = document.querySelectorAll('.footer-column-name');
+
+  footerToggles.forEach( el => {
+    el.addEventListener('click', () => {
+      el.parentNode.classList.toggle('is-active');
+    });
+  });
+
+});
+  
+
+
 
 function videoEnded(video) {
   let poster_1 = '<picture><img src="./images/flower_pattern.svg"></picture>';
