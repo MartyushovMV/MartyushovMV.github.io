@@ -106,10 +106,12 @@ async function initMap() {
       popupButtonsBlockElement.appendChild(buttonElementSecond);
 
       const buttonElement = document.createElement('button');
-      buttonElement.classList.add('button_close');
-      buttonElement.textContent = 'Primary Button';
       buttonElement.onclick = () => {
-        alert('Clicked!');
+        popupWithImage.update({
+          popup: {
+            show: false
+          }
+        });
       };
 
       const closeIconElement = document.createElement('button');
@@ -147,7 +149,7 @@ async function initMap() {
     );
 
     popupWithImage = new YMapDefaultMarker({
-      iconName: 'waterpark',
+      iconName: 'cafe',
       coordinates: [38.090814, 55.608317],
       onClick() {
         popupWithImage.update({popup: {show: true}});
@@ -156,7 +158,7 @@ async function initMap() {
     });
 
     popupWithButtons = new YMapDefaultMarker({
-      iconName: 'boat_station',
+      iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
       onClick() {
         popupWithButtons.update({popup: {show: true}});
