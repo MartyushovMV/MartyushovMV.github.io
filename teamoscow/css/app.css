@@ -489,6 +489,28 @@ button {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-column-name {
+    cursor: pointer;
+  }
+  
+  .footer-column-name:after {
+        content: '';
+        position: relative;
+        width: 7px;
+        height: 7px;
+        border-bottom: 2px solid #F20202;
+        border-right: 2px solid #F20202;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        margin: -4px 0 0 10px;
+        -webkit-transition: .2s all;
+        -o-transition: .2s all;
+        transition: .2s all;
+    }
+}
+
 @media screen and (max-width: 1439px) {
   .footer-pattern-col {
     display: none;
@@ -1723,14 +1745,18 @@ button {
   margin-top: 1rem;
 }
 
-
+@media screen and (max-width: 768px) {
+  .footer-col:not(.is-active) > .list-unstyled {
+    display: none;
+  }
+}
 
 .halfpage-pattern-bottom {
   margin-bottom: 3.1875rem;
   margin-top: 11.25rem;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1440px) {
+@media screen and (min-width: 500px) and (max-width: 1439px) {
   .halfpage-pattern-bottom {
     margin-bottom: 3.125rem;
   }
