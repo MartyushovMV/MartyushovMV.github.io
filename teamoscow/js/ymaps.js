@@ -112,7 +112,6 @@ async function initMap() {
       };
 
       popupButtonsElement.appendChild(popupButtonsBlockElement);
-      popupButtonsElement.appendChild(buttonElement);
 
       popupElement.appendChild(popupElementText);
       popupElement.appendChild(popupButtonsElement);
