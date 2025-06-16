@@ -495,20 +495,21 @@ button {
   }
   
   .footer-column-name:after {
-        content: '';
-        position: relative;
-        width: 7px;
-        height: 7px;
-        border-bottom: 2px solid #F20202;
-        border-right: 2px solid #F20202;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        margin: -4px 0 0 10px;
-        -webkit-transition: .2s all;
-        -o-transition: .2s all;
-        transition: .2s all;
-    }
+    content: '';
+    display: block;
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-bottom: 2px solid #F20202;
+    border-right: 2px solid #F20202;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -4px 0 0 10px;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+  }
 }
 
 @media screen and (max-width: 1439px) {
