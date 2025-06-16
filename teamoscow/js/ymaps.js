@@ -90,29 +90,16 @@ async function initMap() {
 
       const buttonElementFirst = document.createElement('button');
       buttonElementFirst.classList.add('button');
-      buttonElementFirst.textContent = 'Button 1';
+      buttonElementFirst.textContent = 'close';
       buttonElementFirst.onclick = () => {
-        alert('Clicked!');
-      };
-
-      const buttonElementSecond = document.createElement('button');
-      buttonElementSecond.classList.add('button');
-      buttonElementSecond.textContent = 'Button 2';
-      buttonElementSecond.onclick = () => {
-        alert('Clicked!');
-      };
-
-      popupButtonsBlockElement.appendChild(buttonElementFirst);
-      popupButtonsBlockElement.appendChild(buttonElementSecond);
-
-      const buttonElement = document.createElement('button');
-      buttonElement.onclick = () => {
-        popupWithImage.update({
+        PopupWithButtons.update({
           popup: {
             show: false
           }
         });
       };
+
+      popupButtonsBlockElement.appendChild(buttonElementFirst);
 
       const closeIconElement = document.createElement('button');
       closeIconElement.classList.add('close_icon');
