@@ -492,7 +492,7 @@ button {
 @media screen and (max-width: 768px) {
   .footer-column-name {
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
   }
   
