@@ -492,6 +492,8 @@ button {
 @media screen and (max-width: 768px) {
   .footer-column-name {
     cursor: pointer;
+    display: flex;
+    align-items: center;
   }
   
   .footer-column-name:after {
@@ -505,11 +507,18 @@ button {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin: -4px 0 0 10px;
+    margin-left: .5rem;
     -webkit-transition: .2s all;
     -o-transition: .2s all;
     transition: .2s all;
   }
+
+  .footer-col:not(.is-active) > .footer-column-name:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
 }
 
 @media screen and (max-width: 1439px) {
