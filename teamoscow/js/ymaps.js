@@ -90,9 +90,9 @@ async function initMap() {
 
       const buttonElementFirst = document.createElement('button');
       buttonElementFirst.classList.add('button');
-      buttonElementFirst.textContent = 'close';
+      buttonElementFirst.textContent = 'Close';
       buttonElementFirst.onclick = () => {
-        PopupWithButtons.update({
+        popupWithButtons.update({
           popup: {
             show: false
           }
