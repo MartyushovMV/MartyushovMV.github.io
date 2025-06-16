@@ -68,12 +68,20 @@ async function initMap() {
       const popupElement = document.createElement('div');
       popupElement.classList.add('popup', 'second_variant');
 
+      const imageElement = document.createElement('img');
+      imageElement.src = './images/Tverskaya.png';
+      imageElement.alt = 'Tverskaya';
+      imageElement.classList.add('balloon__image');
+
+      const popupContentElement = document.createElement('div');
+      popupContentElement.classList.add('popup__content');
+
       const popupElementText = document.createElement('div');
       popupElementText.classList.add('popup__text');
 
       const popupElementTextTitle = document.createElement('div');
       popupElementTextTitle.classList.add('popup__text_title');
-      popupElementTextTitle.textContent = 'Title of that pop up';
+      popupElementTextTitle.textContent = 'Флагманская площадка Тверской площади';
       popupElementText.appendChild(popupElementTextTitle);
 
       const popupElementTextContent = document.createElement('div');
@@ -113,7 +121,10 @@ async function initMap() {
 
       popupButtonsElement.appendChild(popupButtonsBlockElement);
 
-      popupElement.appendChild(popupElementText);
+      popupContentElement.appendChild(imageElement);
+      popupContentElement.appendChild(popupElementText);
+
+      popupElement.appendChild(popupContentElement);
       popupElement.appendChild(popupButtonsElement);
       popupElement.appendChild(closeIconElement);
 
