@@ -119,7 +119,7 @@ async function initMap() {
       size: 'normal',
       onClick() {
         popupWithImage.update({popup: {show: true}});
-        console.log(popupWithImage.props.size);
+        console.log(popupWithImage.props[0]);
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
