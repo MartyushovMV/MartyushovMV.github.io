@@ -119,7 +119,6 @@ async function initMap() {
       size: 'normal',
       onClick() {
         popupWithImage.update({popup: {show: true}});
-        console.log(popupWithImage[0]);
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
@@ -128,6 +127,7 @@ async function initMap() {
       iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
       onClick() {
+        console.log(popupWithImage.properties.get('size'));
         popup2.update({popup: {show: true}});
       },
       popup: {content: Popup2, position: 'top'}
