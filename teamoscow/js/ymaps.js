@@ -70,7 +70,7 @@ async function initMap() {
 
       const popupClose = document.createElement('div');
       popupClose.classList.add('balloon__close');
-      popupClose.style.cssText = 'mask-image: url(../images/close.svg);';
+      popupClose.style.cssText = 'mask-image: url(./images/close.svg);';
       popupClose.onclick = () => {
         popup2.update({
           popup: {
