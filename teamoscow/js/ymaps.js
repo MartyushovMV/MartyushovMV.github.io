@@ -116,6 +116,7 @@ async function initMap() {
     popupWithImage = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [38.090814, 55.608317],
+      title: 'My Marker Title',
       size: 'normal',
       onClick() {
         popupWithImage.update({popup: {show: true}});
@@ -123,11 +124,13 @@ async function initMap() {
       popup: {content: PopupWithImage, position: 'top'}
     });
 
+    const titlez = popupWithImage.properties.get('title');
+
     popup2 = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
       onClick() {
-        console.log(popupWithImage.properties.get('size'));
+        console.log(titlez);
         popup2.update({popup: {show: true}});
       },
       popup: {content: Popup2, position: 'top'}
