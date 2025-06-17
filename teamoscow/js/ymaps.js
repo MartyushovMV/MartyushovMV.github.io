@@ -116,6 +116,7 @@ async function initMap() {
     popupWithImage = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [38.090814, 55.608317],
+      size: 'normal',
       onClick() {
         popupWithImage.update({popup: {show: true}});
         console.log(popupWithImage.properties.get('size'));
