@@ -14,7 +14,7 @@ async function initMap() {
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
     let popupWithImage = null;
-    let popupWithButtons = null;
+    let popup2 = null;
 
     // Create a custom popup
     const PopupWithImage = () => {
@@ -64,9 +64,20 @@ async function initMap() {
     };
 
     // Create a custom popup
-    const PopupWithButtons = () => {
+    const Popup2 = () => {
       const popupElement = document.createElement('div');
-      popupElement.classList.add('popup', 'second_variant');
+      popupElement.classList.add('balloon');
+
+      const popupClose = document.createElement('div');
+      popupClose.classList.add('balloon__close');
+      popupClose.style.mask-image = 'url(/images/close.svg)'
+      popupClose.onclick = () => {
+        popup2.update({
+          popup: {
+            show: false
+          }
+        });
+      };
 
       const imageElement = document.createElement('img');
       imageElement.src = './images/Tverskaya.png';
@@ -74,59 +85,16 @@ async function initMap() {
       imageElement.classList.add('balloon__image');
 
       const popupContentElement = document.createElement('div');
-      popupContentElement.classList.add('popup__content');
-
-      const popupElementText = document.createElement('div');
-      popupElementText.classList.add('popup__text');
+      popupContentElement.classList.add('balloon__content');
 
       const popupElementTextTitle = document.createElement('div');
       popupElementTextTitle.classList.add('popup__text_title');
       popupElementTextTitle.textContent = 'Флагманская площадка Тверской площади';
-      popupElementText.appendChild(popupElementTextTitle);
+      popupContentElement.appendChild(popupElementTextTitle);
 
-      const popupElementTextContent = document.createElement('div');
-      popupElementTextContent.classList.add('popup__text_content');
-      popupElementTextContent.textContent =
-        'Some useful information about a place. You can add whatever you want: pictures, buttons, different headings.';
-      popupElementText.appendChild(popupElementTextContent);
-
-      const popupButtonsElement = document.createElement('div');
-      popupButtonsElement.classList.add('popup__buttons');
-
-      const popupButtonsBlockElement = document.createElement('div');
-      popupButtonsBlockElement.classList.add('popup__buttons__block');
-
-      const buttonElementFirst = document.createElement('button');
-      buttonElementFirst.classList.add('button');
-      buttonElementFirst.textContent = 'Close';
-      buttonElementFirst.onclick = () => {
-        popupWithButtons.update({
-          popup: {
-            show: false
-          }
-        });
-      };
-
-      popupButtonsBlockElement.appendChild(buttonElementFirst);
-
-      const closeIconElement = document.createElement('button');
-      closeIconElement.classList.add('close_icon');
-      closeIconElement.onclick = () => {
-        popupWithButtons.update({
-          popup: {
-            show: false
-          }
-        });
-      };
-
-      popupButtonsElement.appendChild(popupButtonsBlockElement);
-
-      popupContentElement.appendChild(imageElement);
-      popupContentElement.appendChild(popupElementText);
-
+      popupElement.appendChild(popupClose);
+      popupElement.appendChild(imageElement);
       popupElement.appendChild(popupContentElement);
-      popupElement.appendChild(popupButtonsElement);
-      popupElement.appendChild(closeIconElement);
 
       return popupElement;
     };
@@ -154,18 +122,18 @@ async function initMap() {
       popup: {content: PopupWithImage, position: 'right'}
     });
 
-    popupWithButtons = new YMapDefaultMarker({
+    popup2 = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
       onClick() {
-        popupWithButtons.update({popup: {show: true}});
+        popup2.update({popup: {show: true}});
       },
-      popup: {content: PopupWithButtons, position: 'right'}
+      popup: {content: Popup2, position: 'right'}
     });
 
     map
       .addChild(popupWithImage)
-      .addChild(popupWithButtons);
+      .addChild(popup2);
 
     const controls = new YMapControls({position: 'right'});
     controls.addChild(new YMapZoomControl({}));

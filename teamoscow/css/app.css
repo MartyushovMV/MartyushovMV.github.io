@@ -1905,7 +1905,36 @@ button {
   line-height: .75;
 }
 
+
+/****Map styles****/
+
 .balloon__image {
   width: 120px;
   height: 120px;
+}
+
+.ymaps3--popup-marker_container {
+  padding: 1rem;
+}
+
+.balloon {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.balloon__close {
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #747474;
+  position: absolute;
+  z-index: 2;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
