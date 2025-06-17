@@ -124,7 +124,7 @@ async function initMap() {
       popup: {content: PopupWithImage, position: 'top'}
     });
 
-    const titlez = popupWithImage.properties.get('title');
+    const titlez = popupWithImage.props.get('title');
 
     popup2 = new YMapDefaultMarker({
       iconName: 'cafe',
