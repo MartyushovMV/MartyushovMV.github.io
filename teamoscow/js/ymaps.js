@@ -119,7 +119,7 @@ async function initMap() {
       size: 'normal',
       onClick() {
         popupWithImage.update({popup: {show: true}});
-        console.log(popupWithImage.iconName);
+        console.log(popupWithImage[0]);
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
