@@ -118,7 +118,7 @@ async function initMap() {
       coordinates: [38.090814, 55.608317],
       onClick() {
         popupWithImage.update({popup: {show: true}});
-        console.log(popupWithImage.properties.get('show'));
+        console.log(popupWithImage.properties.get('size'));
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
