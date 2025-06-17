@@ -117,8 +117,8 @@ async function initMap() {
       iconName: 'cafe',
       coordinates: [38.090814, 55.608317],
       onClick() {
-        console.log(popup.get(0).properties.get('show'));
         popupWithImage.update({popup: {show: true}});
+        console.log(popupWithImage.get(0).properties.get('show'));
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
