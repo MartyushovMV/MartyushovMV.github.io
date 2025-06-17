@@ -119,7 +119,7 @@ async function initMap() {
       onClick() {
         popupWithImage.update({popup: {show: true}});
       },
-      popup: {content: PopupWithImage, position: 'right'}
+      popup: {content: PopupWithImage, position: 'top'}
     });
 
     popup2 = new YMapDefaultMarker({
@@ -128,7 +128,7 @@ async function initMap() {
       onClick() {
         popup2.update({popup: {show: true}});
       },
-      popup: {content: Popup2, position: 'right'}
+      popup: {content: Popup2, position: 'top'}
     });
 
     map
