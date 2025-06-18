@@ -123,8 +123,10 @@ async function initMap() {
         if (currentPopup) {
           currentPopup.update({popup: {show: false}});
         }
-        currentPopup = popupWithImage;
-        popupWithImage.update({popup: {show: true}});
+        if (currentPopup !== popupWithImage) {
+          currentPopup = popupWithImage;
+          popupWithImage.update({popup: {show: true}});
+        }
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
@@ -137,8 +139,10 @@ async function initMap() {
         if (currentPopup) {
           currentPopup.update({popup: {show: false}});
         }
-        currentPopup = popup2;
-        popup2.update({popup: {show: true}});
+        if (currentPopup !== popup2) {
+          currentPopup = popup2;
+          popup2.update({popup: {show: true}});
+        }
       },
       popup: {content: Popup2, position: 'top'}
     });
