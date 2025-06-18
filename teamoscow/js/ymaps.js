@@ -128,6 +128,15 @@ async function initMap() {
         if (currentPopup !== popupWithImage) {
           currentPopup = popupWithImage;
           popupWithImage.update({popup: {show: true}});
+          let bounds;
+          map.update({
+            location: {
+              [38.090814, 55.608317],
+              10,
+              bounds,
+              duration: 400
+            }
+          });
         }
       },
       popup: {content: PopupWithImage, position: 'top'}
