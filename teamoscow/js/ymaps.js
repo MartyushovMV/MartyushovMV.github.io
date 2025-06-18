@@ -113,24 +113,31 @@ async function initMap() {
       ]
     );
 
+    let currentPopup;
+
     popupWithImage = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [38.090814, 55.608317],
-      title: 'My Marker Title',
       size: 'normal',
       onClick() {
+        if (currentPopup) {
+          currentPopup.update({popup: {show: false}});
+        }
+        currentPopup = popupWithImage;
         popupWithImage.update({popup: {show: true}});
       },
       popup: {content: PopupWithImage, position: 'top'}
     });
 
-    const titlez = popupWithImage._props.popup.show;
-
     popup2 = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
+      size: 'normal',
       onClick() {
-        console.log(titlez);
+        if (currentPopup) {
+          currentPopup.update({popup: {show: false}});
+        }
+        currentPopup = popup2;
         popup2.update({popup: {show: true}});
       },
       popup: {content: Popup2, position: 'top'}
