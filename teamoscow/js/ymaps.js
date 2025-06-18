@@ -91,10 +91,15 @@ async function initMap() {
       const popupContentElement = document.createElement('div');
       popupContentElement.classList.add('balloon__content');
 
-      const popupElementTextTitle = document.createElement('div');
-      popupElementTextTitle.classList.add('popup__text_title');
+      const popupElementTextTitle = document.createElement('p');
+      popupElementTextTitle.classList.add('balloon__title');
       popupElementTextTitle.textContent = 'Флагманская площадка Тверской площади';
       popupContentElement.appendChild(popupElementTextTitle);
+
+      const popupElementTextDescr = document.createElement('div');
+      popupElementTextDescr.classList.add('balloon__description');
+      popupElementTextDescr.textContent = 'Наша флагманская площадка всегда рада приветствовать жителей и гостей столицы. Ждём Вас ежедневно на Тверской площади. Заходите к нам на чай!';
+      popupContentElement.appendChild(popupElementTextDescr);
 
       popupElement.appendChild(popupClose);
       popupElement.appendChild(imageElement);
