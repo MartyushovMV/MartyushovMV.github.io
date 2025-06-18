@@ -153,6 +153,15 @@ async function initMap() {
         if (currentPopup !== popup2) {
           currentPopup = popup2;
           popup2.update({popup: {show: true}});
+          let bounds;
+          map.update({
+            location: {
+              center: [37.610524, 55.762051],
+              zoom: 10,
+              bounds,
+              duration: 400
+            }
+          });
         }
       },
       popup: {content: Popup2, position: 'top'}
