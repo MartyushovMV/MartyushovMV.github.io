@@ -13,6 +13,8 @@ async function initMap() {
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
+    let currentPopup = null;
+
     let popupWithImage = null;
     let popup2 = null;
 
@@ -45,6 +47,7 @@ async function initMap() {
 
       const buttonElement = document.createElement('button');
       buttonElement.onclick = () => {
+        currentPopup = null;
         popupWithImage.update({
           popup: {
             show: false
@@ -72,6 +75,7 @@ async function initMap() {
       popupClose.classList.add('balloon__close');
       popupClose.style.cssText = 'mask-image: url(./images/close.svg);';
       popupClose.onclick = () => {
+        currentPopup = null;
         popup2.update({
           popup: {
             show: false
@@ -112,8 +116,6 @@ async function initMap() {
         new YMapDefaultFeaturesLayer({})
       ]
     );
-
-    let currentPopup;
 
     popupWithImage = new YMapDefaultMarker({
       iconName: 'cafe',
