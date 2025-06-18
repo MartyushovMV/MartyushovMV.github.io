@@ -124,6 +124,7 @@ async function initMap() {
       onClick() {
         if (currentPopup) {
           currentPopup.update({popup: {show: false}});
+          currentPopup = null;
         }
         if (currentPopup !== popupWithImage) {
           currentPopup = popupWithImage;
@@ -149,6 +150,7 @@ async function initMap() {
       onClick() {
         if (currentPopup) {
           currentPopup.update({popup: {show: false}});
+          currentPopup = null;
         }
         if (currentPopup !== popup2) {
           currentPopup = popup2;
