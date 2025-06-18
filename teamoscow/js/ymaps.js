@@ -122,11 +122,10 @@ async function initMap() {
       coordinates: [38.090814, 55.608317],
       size: 'normal',
       onClick() {
-        if (currentPopup) {
-          currentPopup.update({popup: {show: false}});
-          currentPopup = null;
-        }
         if (currentPopup !== popupWithImage) {
+          if (currentPopup !== null) {
+            currentPopup.update({popup: {show: false}});
+          }
           currentPopup = popupWithImage;
           popupWithImage.update({popup: {show: true}});
           let bounds;
@@ -138,6 +137,9 @@ async function initMap() {
               duration: 400
             }
           });
+        } else {
+          currentPopup.update({popup: {show: false}});
+          currentPopup = null;
         }
       },
       popup: {content: PopupWithImage, position: 'top'}
@@ -148,11 +150,10 @@ async function initMap() {
       coordinates: [37.610524, 55.762051],
       size: 'normal',
       onClick() {
-        if (currentPopup) {
-          currentPopup.update({popup: {show: false}});
-          currentPopup = null;
-        }
         if (currentPopup !== popup2) {
+          if (currentPopup !== null) {
+            currentPopup.update({popup: {show: false}});
+          }
           currentPopup = popup2;
           popup2.update({popup: {show: true}});
           let bounds;
@@ -164,6 +165,9 @@ async function initMap() {
               duration: 400
             }
           });
+        } else {
+          currentPopup.update({popup: {show: false}});
+          currentPopup = null;
         }
       },
       popup: {content: Popup2, position: 'top'}
