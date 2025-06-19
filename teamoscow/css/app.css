@@ -2007,6 +2007,7 @@ button {
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  background-color: #1d1d1d;
 }
 
 .balloon__border-block-item-title {
