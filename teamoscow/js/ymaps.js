@@ -73,7 +73,7 @@ async function initMap() {
 
       const popupClose = document.createElement('div');
       popupClose.classList.add('balloon__close');
-      popupClose.style.cssText = 'mask-image: url(./images/close.svg);';
+      popupClose.style.cssText = 'mask-image: url(./images/close.svg)';
       popupClose.onclick = () => {
         currentPopup = null;
         popup2.update({
@@ -100,6 +100,40 @@ async function initMap() {
       popupElementTextDescr.classList.add('balloon__description');
       popupElementTextDescr.textContent = 'Наша флагманская площадка всегда рада приветствовать жителей и гостей столицы. Ждём Вас ежедневно на Тверской площади. Заходите к нам на чай!';
       popupContentElement.appendChild(popupElementTextDescr);
+
+      const popupElementBorderBlock = document.createElement('div');
+      popupElementBorderBlock.classList.add('balloon__border-block');
+
+      const popupElementBorderBlockItem = document.createElement('div');
+      popupElementBorderBlockItem.classList.add('balloon__border-block-item');
+
+      const popupElementBorderBlockItemIcon = document.createElement('div');
+      popupElementBorderBlockItemIcon.classList.add('balloon__border-block-item-icon');
+      popupElementBorderBlockItemIcon.style.cssText = 'mask-image: url(./images/location.svg)';
+      popupElementBorderBlockItem.appendChild(popupElementBorderBlockItemIcon);
+
+      const popupElementBorderBlockItemTitle = document.createElement('div');
+      popupElementBorderBlockItemTitle.classList.add('balloon__border-block-item-title');
+      popupElementBorderBlockItemTitle.textContent = 'Тверская ул., 8, корп. 1, стр. 4';
+      popupElementBorderBlockItem.appendChild(popupElementBorderBlockItemTitle);
+
+      popupElementBorderBlock.appendChild(popupElementBorderBlockItem);
+      popupContentElement.appendChild(popupElementBorderBlock);
+
+      const popupElementWorkingHours = document.createElement('div');
+      popupElementWorkingHours.classList.add('balloon__working-hours');
+
+      const popupElementWorkingHoursTitle = document.createElement('div');
+      popupElementWorkingHoursTitle.classList.add('balloon__working-hours-title');
+      popupElementWorkingHoursTitle.textContent = 'Режим работы:';
+      popupElementWorkingHours.appendChild(popupElementWorkingHoursTitle);
+
+      const popupElementWorkingHoursDescr = document.createElement('div');
+      popupElementWorkingHoursDescr.classList.add('balloon__working-hours-description');
+      popupElementWorkingHoursDescr.textContent = 'Пн-Пт - 12:00-22:00, Сб,Вс - 10:00-22:00';
+      popupElementWorkingHours.appendChild(popupElementWorkingHoursDescr);
+
+      popupContentElement.appendChild(popupElementWorkingHours);
 
       popupElement.appendChild(popupClose);
       popupElement.appendChild(imageElement);
