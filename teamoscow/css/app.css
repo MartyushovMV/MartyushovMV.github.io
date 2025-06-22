@@ -491,13 +491,13 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-column-name:not(:last-child) {
+  .footer-col:not(:last-child) > .footer-column-name {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
   }
   
-  .footer-column-name:not(:last-child):after {
+  .footer-col:not(:last-child) > .footer-column-name:after {
     content: '';
     display: block;
     position: relative;
@@ -1735,7 +1735,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-col:not(.is-active) > .list-unstyled {
+  .footer-col:not(:last-child):not(.is-active) > .list-unstyled {
     display: none;
   }
 }
