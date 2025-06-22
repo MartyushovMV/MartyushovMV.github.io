@@ -568,7 +568,8 @@ button {
 .cta-button {
   width: 20.25rem;
   height: 20.25rem;
-  /*position: absolute;*/
+  margin-block-start: -10.125rem;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   top: 0;
