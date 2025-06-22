@@ -340,10 +340,10 @@ if (document.querySelector('#novelties-slider')) {
   var slider_new = new KeenSlider("#novelties-slider", {
     breakpoints: {
       "(min-width: 769px)": {
-        slides: { perView: 2, spacing: 20 },
+        slides: { perView: 2, spacing: 40 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 4, spacing: 20 },
+        slides: { perView: 4, spacing: 40 },
       },
     },
     loop: true,
