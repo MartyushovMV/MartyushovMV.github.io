@@ -490,14 +490,28 @@ button {
   margin-bottom: 1.5rem;
 }
 
+.footer-col > .list-unstyled {
+  margin-bottom: 0;
+}
+
+.footer-col > .list-unstyled li + li {
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
-  .footer-col:not(:last-child) > .footer-column-name {
+  .footer-col:not(:nth-last-child(2)):not(.is-active) > .list-unstyled {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-col:not(:nth-last-child(2)) > .footer-column-name {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
   }
   
-  .footer-col:not(:last-child) > .footer-column-name:after {
+  .footer-col:not(:nth-last-child(2)) > .footer-column-name:after {
     content: '';
     display: block;
     position: relative;
@@ -1724,21 +1738,6 @@ button {
   overflow: hidden;
 }*/
 
-
-
-.footer-col > .list-unstyled {
-  margin-bottom: 0;
-}
-
-.footer-col > .list-unstyled li + li {
-  margin-top: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-col:not(:last-child):not(.is-active) > .list-unstyled {
-    display: none;
-  }
-}
 
 .halfpage-pattern-bottom {
   margin-bottom: 3.1875rem;
