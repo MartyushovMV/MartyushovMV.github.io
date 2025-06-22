@@ -1527,58 +1527,30 @@ button {
   }
 }
 
-.announcement-info {
+.news-info {
   width: 87.5rem;
   display: flex;
   gap: 2.5rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .announcement-photo, .announcement-text {
-    width: 50%;
-  }
+.news-photo, .news-text {
+  width: 50%;
 }
 
-@media screen and (max-width: 1023px) {
-  .announcement-info {
-    display: block;
-  }
+.news-text-title {
+  margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .announcement-info {
-    width: auto;
-  }
+.news-text-description {
+  margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .announcement-info {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 768px) {
-  .announcement-info {
-    width: 75.52vw;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .announcement-info {
-    width: auto;
-  }
-}
-
-.announcement-photo img {
+.news-photo img {
   width: 100%;
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 1023px) {
-  .announcement-photo {
-    margin-bottom: 1.25rem;
-  }
-}
+
 
 
 
