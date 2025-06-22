@@ -1064,20 +1064,33 @@ button {
   }
 }
 
-.articles-slider-dots .dot--active, .partners-slider-dots .dot--active {
+.partners-slider-dots .dot--active {
   background: #C09C5E;
   border: 1px solid #ffffff;
+}
+
+.news-slider-dots .dot--active {
+  background: #EE3524;
+  border: 1px solid #EE3524;
 }
 
 .dot {
   width: .8rem !important;
   height: .8rem;
-  background: #ffffff;
-  border: 1px solid #C09C5E;
   margin: 0 .5rem;
   padding: .35rem;
   cursor: pointer;
   transform: rotate(45deg);
+}
+
+.partners-slider-dots .dot {
+  background: #ffffff;
+  border: 1px solid #C09C5E;
+}
+
+.news-slider-dots .dot {
+  background: #ffffff;
+  border: 1px solid #EE3524;
 }
 
 .poster > .image {
