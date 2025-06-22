@@ -170,7 +170,7 @@ async function initMap() {
           let bounds;
           map.update({
             location: {
-              center: [38.090814, 55.608500],
+              center: [38.090814, 55.608900],
               zoom: 10,
               bounds,
               duration: 400
