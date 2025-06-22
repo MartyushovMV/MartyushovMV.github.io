@@ -2045,3 +2045,22 @@ button {
   padding-top: 12px;
   position: relative;
 }
+
+
+
+
+
+
+.image-back {
+  display: none;
+}
+
+.product-image:hover {
+  .image-front {
+    display: none;
+  }
+  .image-back {
+    display: block;
+  }
+}
+
