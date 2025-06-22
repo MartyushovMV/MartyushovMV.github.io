@@ -391,6 +391,7 @@ button {
   color: #fff;
   display: flex;
   justify-content: center;
+  margin-top: 11.25rem;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
