@@ -388,7 +388,7 @@ button {
 
 .bd-footer {
   background-color: #C19D60;
-  color: #fff;
+  color: #f7f6f5;
   display: flex;
   justify-content: center;
   margin-top: 11.25rem;
@@ -491,20 +491,20 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-column-name {
+  .footer-column-name:not(:last-child) {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
   }
   
-  .footer-column-name:after {
+  .footer-column-name:not(:last-child):after {
     content: '';
     display: block;
     position: relative;
     width: 7px;
     height: 7px;
-    border-bottom: 2px solid #EE3524;
-    border-right: 2px solid #EE3524;
+    border-bottom: 2px solid #f7f6f5;
+    border-right: 2px solid #f7f6f5;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
