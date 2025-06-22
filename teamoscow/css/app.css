@@ -568,7 +568,7 @@ button {
 .cta-button {
   width: 20.25rem;
   height: 20.25rem;
-  position: absolute;
+  /*position: absolute;*/
   margin-left: auto;
   margin-right: auto;
   top: 0;
@@ -589,6 +589,13 @@ button {
   }
 }
 
+.cta-button:after {
+  content: ' ';
+  display: block;
+  height: 50%;
+}
+
+/*
 @media screen and (min-width: 769px) {
   .cta-button::before {
     content: ' ';
@@ -655,7 +662,7 @@ button {
     height: 30%;
   }
 }
-
+*/
 
 .main_pattern {
   display: flex;
@@ -1861,7 +1868,7 @@ button {
 }
 
 .add-to-cart-button {
-  background-color: #F20202;
+  background-color: #EE3524;
   padding: 1.5rem 4rem;
   border-radius: .5rem;
 }
