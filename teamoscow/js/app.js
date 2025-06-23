@@ -9,15 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     target.classList.toggle('is-active');
   });
 
-  const ctaButton = document.querySelector('.navbar-cta-button');
-
-  ctaButton.addEventListener('click', () => {
-    const target_id = navbarBurger.dataset.target;
-    const target = document.getElementById(target_id);
-    navbarBurger.classList.remove('is-active');
-    target.classList.remove('is-active');
-  });
-
 });
 
 
