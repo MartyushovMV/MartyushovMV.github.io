@@ -42,11 +42,10 @@ function videoFinished(video) {
 
 if (document.querySelector('#partners-slider')) {
   function navigation(slider) {
-    let arrowLeft, arrowRight, arrowsWrapper, dots
+    let arrowLeft, arrowRight, arrowsWrapper
 
     function markup(remove) {
       arrowMarkup(remove)
-      dotMarkup(remove)
     }
 
     function removeElement(elment) {
@@ -82,29 +81,8 @@ if (document.querySelector('#partners-slider')) {
       partnersHeader.appendChild(arrowsWrapper)
     }
 
-    function dotMarkup(remove) {
-      if (remove) {
-        removeElement(dots)
-        return
-      }
-      dots = createDiv("dots partners-slider-dots")
-      slider.track.details.slides.forEach((_e, idx) => {
-        var dot = createDiv("dot")
-        dot.addEventListener("click", () => slider.moveToIdx(idx))
-        dots.appendChild(dot)
-      })
-      dotsPlace = document.querySelector('.partners-section-content')
-      dotsPlace.appendChild(dots)
-      //wrapper.appendChild(dots)
-    }
-
     function updateClasses() {
       var slide = slider.track.details.rel
-      Array.from(dots.children).forEach(function (dot, idx) {
-        idx === slide
-          ? dot.classList.add("dot--active")
-          : dot.classList.remove("dot--active")
-      })
     }
 
     slider.on("created", () => {
@@ -128,10 +106,6 @@ if (document.querySelector('#partners-slider')) {
     breakpoints: {
       "(min-width: 769px)": {
         drag: false,
-        slides: { perView: 1 },
-      },
-      "(min-width: 1024px)": {
-        drag: false,
         slides: { perView: 3, spacing: 20 },
       },
       "(min-width: 1440px)": {
@@ -142,7 +116,7 @@ if (document.querySelector('#partners-slider')) {
     loop: true,
     mode: "free-snap",
     drag: true,
-    slides: { perView: 1 },
+    slides: { perView: 2, spacing: 19 },
   }, [navigation])
 
 }
