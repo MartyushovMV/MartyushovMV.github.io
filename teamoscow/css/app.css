@@ -365,6 +365,7 @@ button {
   }
   .mobilenavbar-list {
     display: block;
+    text-align: center;
   }
   .mobilenavbar-list li + li {
     margin-top: 1.5rem;
