@@ -884,6 +884,68 @@ button {
 
 
 
+
+
+.seasonal-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11.25rem;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .seasonal-section {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seasonal-section {
+    display: block;
+  }
+}
+
+.seasonal-section-content {
+  width: 87.5rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .seasonal-section-content {
+    width: auto;
+    padding: 0 1.125rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .seasonal-section-content {
+    width: 36.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seasonal-section-content {
+    width: auto;
+    padding: 0 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .articles-slider-section {
   display: flex;
   flex-direction: column;
