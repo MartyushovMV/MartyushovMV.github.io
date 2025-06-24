@@ -961,7 +961,7 @@ button {
 }
 
 .seasonal-product-left {
-  padding-right: 7.5rem;
+  padding: 0 7.5rem 2.5rem 0;
 }
 
 .seasonal-product-left p {
@@ -970,7 +970,7 @@ button {
 }
 
 .seasonal-product-right {
-  padding-left: 7.5rem;
+  padding: 0 0 2.5rem 7.5rem;
 }
 
 .seasonal-product-left button, .seasonal-product-right button {
