@@ -13,7 +13,7 @@ async function initMap() {
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
-    let popupWithImage = null;
+    let currentPopup = null;
     let popup2 = null;
 
     // Create a custom popup
