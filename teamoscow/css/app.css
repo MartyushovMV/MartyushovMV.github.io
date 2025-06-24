@@ -982,6 +982,12 @@ button {
   margin-bottom: 1.5rem;
 }
 
+.seasonal-buy-button {
+  background-color: #EE3524;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
 
 
 
