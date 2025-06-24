@@ -24,6 +24,7 @@ async function initMap() {
       const popupClose = document.createElement('div');
       popupClose.classList.add('balloon__close');
       popupClose.style.maskImage = 'url(./images/close.svg)';
+      popupClose.style.webkitMaskImage = 'url(./images/close.svg)';
       popupClose.onclick = () => {
         currentPopup = null;
         popup2.update({
@@ -60,6 +61,7 @@ async function initMap() {
       const popupElementBorderBlockItemIcon = document.createElement('div');
       popupElementBorderBlockItemIcon.classList.add('balloon__border-block-item-icon');
       popupElementBorderBlockItemIcon.style.maskImage = 'url(./images/location.svg)';
+      popupElementBorderBlockItemIcon.style.webkitMaskImage = 'url(./images/location.svg)';
       popupElementBorderBlockItem.appendChild(popupElementBorderBlockItemIcon);
 
       const popupElementBorderBlockItemTitle = document.createElement('div');
