@@ -944,7 +944,11 @@ button {
   width: 20rem;
 }
 
-
+.seasonal-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 
 
