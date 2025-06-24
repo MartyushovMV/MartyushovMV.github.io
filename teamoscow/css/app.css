@@ -934,6 +934,14 @@ button {
   width: 100%;
 }
 
+.seasonal-section-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  border: 30px solid transparent;
+  border-image-source: url('../images/s_frame.png');
+  border-image-slice: 60 fill;
+}
 
 
 
