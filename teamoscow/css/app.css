@@ -941,6 +941,7 @@ button {
   border: 30px solid transparent;
   border-image-source: url('../images/s_frame.png');
   border-image-slice: 60 fill;
+  width: 20rem;
 }
 
 
