@@ -13,58 +13,8 @@ async function initMap() {
     const {YMapGeolocationControl} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
     const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
 
-    let currentPopup = null;
-
     let popupWithImage = null;
     let popup2 = null;
-
-    // Create a custom popup
-    const PopupWithImage = () => {
-      const popupElement = document.createElement('div');
-      popupElement.classList.add('popup');
-
-      const imageElement = document.createElement('img');
-      imageElement.src = './images/waves.png';
-      imageElement.alt = 'waves';
-      imageElement.classList.add('balloon__image');
-
-      const popupContentElement = document.createElement('div');
-      popupContentElement.classList.add('popup__content');
-
-      const popupElementText = document.createElement('div');
-      popupElementText.classList.add('popup__text');
-
-      const popupElementTextTitle = document.createElement('div');
-      popupElementTextTitle.classList.add('popup__text_title');
-      popupElementTextTitle.textContent = 'Title of that pop up';
-      popupElementText.appendChild(popupElementTextTitle);
-
-      const popupElementTextContent = document.createElement('div');
-      popupElementTextContent.classList.add('popup__text_content');
-      popupElementTextContent.textContent =
-        'Some useful information about a place. You can add whatever you want: pictures, buttons, different headings.';
-      popupElementText.appendChild(popupElementTextContent);
-
-      const buttonElement = document.createElement('button');
-      buttonElement.onclick = () => {
-        currentPopup = null;
-        popupWithImage.update({
-          popup: {
-            show: false
-          }
-        });
-      };
-      buttonElement.classList.add('button');
-      buttonElement.textContent = 'Close';
-
-      popupContentElement.appendChild(imageElement);
-      popupContentElement.appendChild(popupElementText);
-
-      popupElement.appendChild(popupContentElement);
-      popupElement.appendChild(buttonElement);
-
-      return popupElement;
-    };
 
     // Create a custom popup
     const Popup2 = () => {
@@ -73,7 +23,7 @@ async function initMap() {
 
       const popupClose = document.createElement('div');
       popupClose.classList.add('balloon__close');
-      popupClose.style.cssText = 'mask-image: url(./images/close.svg)';
+      popupClose.style.maskImage = 'url(./images/close.svg)';
       popupClose.onclick = () => {
         currentPopup = null;
         popup2.update({
@@ -109,7 +59,7 @@ async function initMap() {
 
       const popupElementBorderBlockItemIcon = document.createElement('div');
       popupElementBorderBlockItemIcon.classList.add('balloon__border-block-item-icon');
-      popupElementBorderBlockItemIcon.style.cssText = 'mask-image: url(./images/location.svg)';
+      popupElementBorderBlockItemIcon.style.maskImage = 'url(./images/location.svg)';
       popupElementBorderBlockItem.appendChild(popupElementBorderBlockItemIcon);
 
       const popupElementBorderBlockItemTitle = document.createElement('div');
@@ -156,34 +106,6 @@ async function initMap() {
       ]
     );
 
-    popupWithImage = new YMapDefaultMarker({
-      iconName: 'cafe',
-      coordinates: [38.090814, 55.608317],
-      size: 'normal',
-      onClick() {
-        if (currentPopup !== popupWithImage) {
-          if (currentPopup !== null) {
-            currentPopup.update({popup: {show: false}});
-          }
-          currentPopup = popupWithImage;
-          popupWithImage.update({popup: {show: true}});
-          let bounds;
-          map.update({
-            location: {
-              center: [38.090814, 55.648317],
-              zoom: 10,
-              bounds,
-              duration: 400
-            }
-          });
-        } else {
-          currentPopup.update({popup: {show: false}});
-          currentPopup = null;
-        }
-      },
-      popup: {content: PopupWithImage, position: 'top'}
-    });
-
     popup2 = new YMapDefaultMarker({
       iconName: 'cafe',
       coordinates: [37.610524, 55.762051],
@@ -212,9 +134,7 @@ async function initMap() {
       popup: {content: Popup2, position: 'top'}
     });
 
-    map
-      .addChild(popupWithImage)
-      .addChild(popup2);
+    map.addChild(popup2);
 
     const controls = new YMapControls({position: 'right'});
     controls.addChild(new YMapZoomControl({}));
