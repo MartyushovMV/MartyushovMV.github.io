@@ -1256,11 +1256,7 @@ button {
   }
 }
 
-.map-top-ribbon {
-  height: 3.875rem;
-  background-color: rgb(193, 157, 96);
-  background-image: url("../images/svg_pattern.svg");
-}
+
 
 .map-section {
   display: flex;
@@ -1360,6 +1356,14 @@ button {
 
 .map-title {
   font-size: 3rem;
+}
+
+.map-button {
+  padding: 1.6563rem 3rem;
+  border-radius: .5rem;
+  color: #ffffff;
+  background-color: #EE3524;
+  font-weight: 600;
 }
 
 
