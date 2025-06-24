@@ -934,18 +934,6 @@ button {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .seasonal-pattern {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .seasonal-pattern-mobile {
-    display: none;
-  }
-}
-
 
 
 
