@@ -192,16 +192,19 @@ if (document.querySelector('#favorites-slider')) {
   var slider_new = new KeenSlider("#favorites-slider", {
     breakpoints: {
       "(min-width: 769px)": {
-        slides: { perView: 2, spacing: 20 },
+        slides: { perView: 3, spacing: 20 },
       },
       "(min-width: 1024px)": {
         slides: { perView: 4, spacing: 20 },
+      },
+      "(min-width: 1440px)": {
+        slides: { perView: 4, spacing: 40 },
       },
     },
     loop: true,
     mode: "free-snap",
     drag: false,
-    slides: { perView: 4, spacing: 40 },
+    slides: { perView: 2, spacing: 20 },
   }, [navigation])
 
 }
