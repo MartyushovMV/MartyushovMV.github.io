@@ -937,6 +937,7 @@ button {
 .seasonal-section-title-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 3.125rem;
 }
 
 .seasonal-section-title {
@@ -960,9 +961,13 @@ button {
   width: calc( ( 100% - 5rem ) / 3 );
 }
 
+.seasonal-product-left {
+  padding-right: 7.5rem;
+}
 
-
-
+.seasonal-product-right {
+  padding-left: 7.5rem;
+}
 
 
 
