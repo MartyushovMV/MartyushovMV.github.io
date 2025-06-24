@@ -969,6 +969,15 @@ button {
   padding-left: 7.5rem;
 }
 
+.seasonal-product-left p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.seasonal-product-left p, .seasonal-product-right p {
+  margin-bottom: 1.5rem;
+}
+
 
 
 
