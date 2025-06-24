@@ -960,6 +960,15 @@ button {
   width: calc( ( 100% - 5rem ) / 3 );
 }
 
+@media screen and (min-width: 769px) {
+  .seasonal-product {
+    column-gap: 1.25rem;
+  }
+  .seasonal-product-left, .seasonal-product-img, .seasonal-product-right {
+    width: calc( ( 100% - 2.5rem ) / 3 );
+  }
+}
+
 .seasonal-product-left {
   padding: 0 7.5rem 2.5rem 0;
 }
