@@ -1229,6 +1229,7 @@ button {
 .product-details {
   display: flex;
   justify-content: space-between;
+  column-gap: .25rem;
   margin: .75rem 0;
 }
 
