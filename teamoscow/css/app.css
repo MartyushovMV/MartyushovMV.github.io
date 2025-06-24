@@ -935,7 +935,8 @@ button {
 }
 
 .seasonal-section-title-wrapper {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .seasonal-section-title {
@@ -952,7 +953,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  column-gap: 2.5rem;
 }
+
+.seasonal-product-left, .seasonal-product-img, .seasonal-product-right {
+  flex: 1 1 calc(100%/3 - 5rem);
+}
+
+
 
 
 
