@@ -72,7 +72,7 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .primary-navigation {
     width: auto;
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem 1.125rem;
   }
 }
 
@@ -209,7 +209,7 @@ button {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .categories-menu {
     width: auto;
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem 1.125rem;
   }
 }
 
