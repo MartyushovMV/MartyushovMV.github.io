@@ -120,10 +120,11 @@ async function initMap() {
           currentPopup = popup2;
           popup2.update({popup: {show: true}});
           let bounds;
+          let currentZoom = map.getZoom();
           map.update({
             location: {
               center: [37.610524, 55.802051],
-              zoom: 10,
+              zoom: currentZoom,
               bounds,
               duration: 400
             }
