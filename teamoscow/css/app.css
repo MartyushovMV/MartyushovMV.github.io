@@ -965,13 +965,17 @@ button {
   padding-right: 7.5rem;
 }
 
+.seasonal-product-left p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .seasonal-product-right {
   padding-left: 7.5rem;
 }
 
-.seasonal-product-left p {
-  font-size: 1.5rem;
-  font-weight: 500;
+.seasonal-product-right .more-button, .seasonal-product-right .more-button span {
+  width: 100;
 }
 
 .seasonal-product-left p, .seasonal-product-right p {
