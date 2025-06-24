@@ -974,7 +974,7 @@ button {
   padding-left: 7.5rem;
 }
 
-.seasonal-product-right .more-button, .seasonal-product-right .more-button span {
+.seasonal-product-left button, .seasonal-product-right button {
   width: 100;
 }
 
