@@ -1235,6 +1235,7 @@ button {
 .p-name {
   font-weight: 600;
   margin-bottom: 0;
+  line-height: 120%;
 }
 
 .p-quantity {
