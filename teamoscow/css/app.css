@@ -975,7 +975,7 @@ button {
 }
 
 .seasonal-product-left button, .seasonal-product-right button {
-  width: 100;
+  width: 100%;
 }
 
 .seasonal-product-left p, .seasonal-product-right p {
