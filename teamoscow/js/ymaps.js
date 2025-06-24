@@ -113,6 +113,7 @@ async function initMap() {
       coordinates: [37.610524, 55.762051],
       size: 'normal',
       onClick() {
+        console.log(map.zoom);
         if (currentPopup !== popup2) {
           if (currentPopup !== null) {
             currentPopup.update({popup: {show: false}});
@@ -120,11 +121,10 @@ async function initMap() {
           currentPopup = popup2;
           popup2.update({popup: {show: true}});
           let bounds;
-          let currentZoom = map.getZoom();
           map.update({
             location: {
               center: [37.610524, 55.802051],
-              zoom: currentZoom,
+              zoom: 10,
               bounds,
               duration: 400
             }
