@@ -1186,7 +1186,8 @@ button {
 
 @media screen and (max-width: 768px) {
   .favorite-products-section {
-    display: none;
+    display: block;
+    padding: 0 1rem;
   }
 }
 
@@ -1206,7 +1207,11 @@ button {
   }
 }
 
-
+@media screen and (max-width: 768px) {
+  .favorites-block {
+    width: auto;
+  }
+}
 
 
 .favorite-products-header, .new-products-header {
