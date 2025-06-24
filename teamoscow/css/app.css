@@ -1318,7 +1318,7 @@ button {
 
 
 
-.favorite-product-info {
+.favorite-product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
