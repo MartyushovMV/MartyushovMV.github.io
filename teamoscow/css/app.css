@@ -535,8 +535,7 @@ button {
 }
 
 .copyright-text {
-  font-size: .75rem;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
