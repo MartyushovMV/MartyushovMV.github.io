@@ -1243,6 +1243,7 @@ button {
   color: #ffffff;
   background-color: #C19D60;
   padding: .75rem;
+  line-height: 140%;
   margin-bottom: 0;
   flex-shrink: 0;
 }
@@ -1250,7 +1251,6 @@ button {
 @media screen and (max-width: 768px) {
   .p-quantity {
     font-size: .75rem;
-    line-height: 140%;
     padding: .25rem;
   }
 }
