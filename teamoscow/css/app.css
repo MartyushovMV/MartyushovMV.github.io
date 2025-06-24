@@ -1247,6 +1247,13 @@ button {
   flex-shrink: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .p-quantity {
+    font-size: .75rem;
+    line-height: 140%;
+    padding: .25rem;
+  }
+}
 
 .map-top-ribbon {
   height: 3.875rem;
