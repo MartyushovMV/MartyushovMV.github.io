@@ -998,6 +998,14 @@ button {
   }
 }
 
+.seasonal-product-left button, .seasonal-product-right button {
+  width: 100%;
+}
+
+.seasonal-product-left p, .seasonal-product-right p {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .seasonal-product {
     flex-wrap: wrap;
@@ -1010,6 +1018,12 @@ button {
   }
   .seasonal-product-img {
     width: 14.0625rem;
+  }
+  .seasonal-product-left p {
+    font-size: 1.125rem;
+  }
+  .seasonal-product-left p, .seasonal-product-right p {
+    margin-bottom: 0;
   }
   .seasonal-product-left, .seasonal-product-right {
     width: calc(50% - 0.625rem);
@@ -1026,13 +1040,6 @@ button {
   }
 }
 
-.seasonal-product-left button, .seasonal-product-right button {
-  width: 100%;
-}
-
-.seasonal-product-left p, .seasonal-product-right p {
-  margin-bottom: 1.5rem;
-}
 
 .seasonal-buy-button {
   color: #ffffff;
