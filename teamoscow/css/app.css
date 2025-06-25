@@ -1019,11 +1019,20 @@ button {
   .seasonal-product-img {
     width: 14.0625rem;
   }
+  .seasonal-product-left {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .seasonal-product-left p {
     font-size: 1.125rem;
   }
-  .seasonal-product-left p, .seasonal-product-right p {
+  .seasonal-product-left p {
     margin-bottom: 0;
+  }
+  .seasonal-product-right p {
+    margin-bottom: .875rem;
   }
   .seasonal-product-left, .seasonal-product-right {
     width: calc(50% - 0.625rem);
