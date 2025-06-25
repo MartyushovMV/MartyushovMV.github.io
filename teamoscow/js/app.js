@@ -33,7 +33,7 @@ function videoEnded(video) {
 };
 
 function videoFinished(video) {
-  let poster_2 = '<picture><img src="./images/pearl.svg"></picture>';
+  let poster_2 = '<picture><img src="./images/seasonal_pattern_mobile.png"></picture>';
   document.getElementById('animated-video').outerHTML = poster_2;
 };
 
