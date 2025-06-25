@@ -1006,6 +1006,10 @@ button {
   width: 100%;
 }
 
+.animated_pattern video {
+  outline: 1px solid #F7F6F5;
+}
+
 
 
 
