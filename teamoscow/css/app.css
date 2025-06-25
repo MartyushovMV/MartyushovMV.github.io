@@ -996,6 +996,12 @@ button {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .animated_pattern_mobile {
+    display: none;
+  }
+}
+
 .animated_pattern img, .animated_pattern video {
   width: 100%;
 }
