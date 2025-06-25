@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function videoEnded(video) {
-  let poster_1 = '<picture><img src="./images/flower_pattern.svg"></picture>';
-  document.getElementById('middle-video').outerHTML = poster_1;
+  let poster_1 = '<picture><img src="./images/seasonal_pattern.svg"></picture>';
+  document.getElementById('background-video').outerHTML = poster_1;
 };
 
 function videoFinished(video) {
