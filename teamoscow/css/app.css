@@ -932,6 +932,18 @@ button {
   width: 20rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .seasonal-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seasonal-section-title-wrapper {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .seasonal-product {
   display: flex;
   justify-content: space-between;
