@@ -1002,7 +1002,7 @@ button {
   }
 }
 
-.animated_pattern img, .animated_pattern video {
+.animated_pattern img, .animated_pattern video, .animated_pattern_mobile img, .animated_pattern_mobile video {
   width: 100%;
 }
 
