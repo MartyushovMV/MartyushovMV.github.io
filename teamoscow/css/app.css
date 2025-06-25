@@ -939,7 +939,7 @@ button {
   column-gap: 2.5rem;
 }
 
-.seasonal-product-left, .seasonal-product-img, .seasonal-product-right {
+.seasonal-product-left, .seasonal-product-img-wrapper, .seasonal-product-right {
   width: calc( ( 100% - 5rem ) / 3 );
 }
 
@@ -947,14 +947,22 @@ button {
   .seasonal-product {
     column-gap: 1.25rem;
   }
-  .seasonal-product-left, .seasonal-product-img, .seasonal-product-right {
+  .seasonal-product-left, .seasonal-product-img-wrapper, .seasonal-product-right {
     width: calc( ( 100% - 2.5rem ) / 3 );
   }
+}
+
+.seasonal-product-img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .seasonal-product {
     flex-wrap: wrap;
+  }
+  .seasonal-product-img-wrapper {
+    width: 100%;
+    text-align: center;
   }
   .seasonal-product-img {
     width: 14.0625rem;
