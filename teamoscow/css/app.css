@@ -990,6 +990,11 @@ button {
   border-radius: .5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .animated_pattern {
+    display: none;
+  }
+}
 
 .animated_pattern img, .animated_pattern video {
   width: 100%;
