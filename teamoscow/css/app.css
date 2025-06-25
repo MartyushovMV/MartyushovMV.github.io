@@ -1080,6 +1080,8 @@ button {
 
 .animated_pattern video {
   outline: none;
+  clip-path: fill-box;
+  border-radius: 0.01px;
 }
 
 /*.animated_pattern {
