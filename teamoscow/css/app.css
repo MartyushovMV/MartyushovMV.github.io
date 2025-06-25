@@ -1000,6 +1000,7 @@ button {
   .seasonal-product-img-wrapper {
     width: 100%;
     text-align: center;
+    padding-bottom: 2.5rem;
   }
   .seasonal-product-img {
     width: 14.0625rem;
