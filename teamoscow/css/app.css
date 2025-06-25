@@ -959,6 +959,7 @@ button {
 @media screen and (max-width: 768px) {
   .seasonal-product {
     flex-wrap: wrap;
+    column-gap: 1.25rem;
   }
   .seasonal-product-img-wrapper {
     width: 100%;
@@ -968,7 +969,8 @@ button {
     width: 14.0625rem;
   }
   .seasonal-product-left, .seasonal-product-right {
-    width: 48%;
+    width: calc(50% - 0.625rem);
+    padding: 0;
   }
   .seasonal-product > :nth-child(1) {
     order: 2;
