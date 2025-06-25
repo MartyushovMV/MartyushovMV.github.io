@@ -743,13 +743,7 @@ button {
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .partners-section {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1439px) {
   .partners-section {
     display: block;
   }
@@ -759,22 +753,26 @@ button {
   width: 87.5rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .partners-section-content {
     width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .partners-section-content {
     padding: 0 1.125rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .partners-section-content {
-    width: 36.25rem;
+    padding: 0 1.25rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .partners-section-content {
-    width: auto;
     padding: 0 1rem;
   }
 }
@@ -956,15 +954,6 @@ button {
   padding: 0 7.5rem 2.5rem 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .seasonal-product-left {
-    padding: 0 1.25rem 1.25rem 0;
-  }
-  .seasonal-product-right {
-    padding: 0 0 1.25rem 1.25rem;
-  }
-}
-
 .seasonal-product-left p {
   font-size: 1.5rem;
   font-weight: 500;
@@ -972,6 +961,15 @@ button {
 
 .seasonal-product-right {
   padding: 0 0 2.5rem 7.5rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .seasonal-product-left {
+    padding: 0 1.25rem 1.25rem 0;
+  }
+  .seasonal-product-right {
+    padding: 0 0 1.25rem 1.25rem;
+  }
 }
 
 .seasonal-product-left button, .seasonal-product-right button {
