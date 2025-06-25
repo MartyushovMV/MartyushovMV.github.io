@@ -952,6 +952,27 @@ button {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .seasonal-product {
+    flex-wrap: wrap;
+  }
+  .seasonal-product-img {
+    width: 14.0625rem;
+  }
+  .seasonal-product-left, .seasonal-product-right {
+    width: 48%;
+  }
+  .seasonal-product > :nth-child(1) {
+    order: 2;
+  }
+  .seasonal-product > :nth-child(2) {
+    order: 1;
+  }
+  .seasonal-product > :nth-child(3) {
+    order: 3;
+  }
+}
+
 .seasonal-product-left {
   padding: 0 7.5rem 2.5rem 0;
 }
