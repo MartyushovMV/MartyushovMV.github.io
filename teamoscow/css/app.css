@@ -373,7 +373,7 @@ button {
 
 .bd-footer {
   background-color: #C19D60;
-  color: #f7f6f5;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   margin-top: 11.25rem;
@@ -415,7 +415,7 @@ button {
 }
 
 .bd-footer a {
-  color: #F7F6F5;
+  color: #ffffff;
   text-decoration: none;
 }
 
