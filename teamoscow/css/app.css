@@ -991,7 +991,9 @@ button {
 }
 
 
-
+.animated_pattern img, .animated_pattern video {
+  width: 100%;
+}
 
 
 
