@@ -1059,6 +1059,12 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .seasonal-buy-button span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .animated_pattern {
     display: none;
   }
