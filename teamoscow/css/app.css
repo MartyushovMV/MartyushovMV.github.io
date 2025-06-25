@@ -1059,8 +1059,14 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .seasonal-buy-button {
+    padding: .75rem 0;
+  }
   .seasonal-buy-button span {
     display: none;
+  }
+  .seasonal-product-right button {
+    padding: 0.9063rem 0;
   }
 }
 
