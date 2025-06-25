@@ -1052,6 +1052,10 @@ button {
   width: 100%;
 }
 
+.animated_pattern {
+  line-height: 0;
+}
+
 /*.animated_pattern {
   outline: 3px solid #F7F6F5;
 }*/
