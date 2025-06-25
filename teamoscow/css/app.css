@@ -1255,7 +1255,7 @@ button {
 }
 
 @media screen and (max-width: 1439px) {
-  .favorite-products-section {
+  .favorites-block {
     width: auto;
   }
 }
