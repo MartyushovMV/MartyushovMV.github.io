@@ -941,6 +941,10 @@ button {
 @media screen and (max-width: 768px) {
   .seasonal-section-title-wrapper {
     margin-bottom: 2.5rem;
+    border: 15px solid transparent;
+    border-image-source: url('../images/s_frame_mobile.png');
+    border-image-slice: 30 fill;
+    width: 10.4375rem;
   }
 }
 
