@@ -1369,9 +1369,15 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .map {
     height: calc(100vw - 2rem);
+  }
+}*/
+
+@media (max-width: 768px) {
+  .map {
+    height: calc(500px + (100vw - 320px) * .4);
   }
 }
 
