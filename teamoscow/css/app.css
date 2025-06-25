@@ -878,13 +878,7 @@ button {
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .seasonal-section {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1439px) {
   .seasonal-section {
     display: block;
   }
@@ -894,22 +888,26 @@ button {
   width: 87.5rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .seasonal-section-content {
     width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .seasonal-section-content {
     padding: 0 1.125rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .seasonal-section-content {
-    width: 36.25rem;
+    padding: 0 1.25rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .seasonal-section-content {
-    width: auto;
     padding: 0 1rem;
   }
 }
