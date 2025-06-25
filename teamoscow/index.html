@@ -256,19 +256,20 @@
 
           <div class="seasonal-section">
             <div class="seasonal-section-content">
-              <picture>
-                <source media="(max-width: 768px)" srcset="./images/seasonal_pattern_mobile.svg">
-                <img src="./images/seasonal_pattern.svg" class="seasonal-pattern">
-              </picture>
+              <div class="main_pattern">
+                <video id="background-video" autoplay="" muted="" poster="./images/seasonal_pattern.svg" onended="videoEnded(this)">
+                  <source src="./images/seasonal_pattern.mp4" type="video/mp4">
+                </video>
+              </div>
               <div class="seasonal-section-title-wrapper">
                 <div class="seasonal-section-title">Новинка</div>
               </div>
               <div class="seasonal-product">
                 <div class="seasonal-product-left">
                   <p>Тёплые, пряные, медовые оттенки в осеннем чае Москва</p>
-                    <button class="seasonal-buy-button">
-                      В корзину
-                    </button>
+                  <button class="seasonal-buy-button">
+                    В корзину
+                  </button>
                 </div>
                 <img src="./images/autumn_tea.png" class="seasonal-product-img">
                 <div class="seasonal-product-right">
