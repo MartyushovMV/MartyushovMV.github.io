@@ -958,6 +958,15 @@ button {
   padding: 0 7.5rem 2.5rem 0;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .seasonal-product-left {
+    padding: 0 1.25rem 1.25rem 0;
+  }
+  .seasonal-product-right {
+    padding: 0 0 1.25rem 1.25rem;
+  }
+}
+
 .seasonal-product-left p {
   font-size: 1.5rem;
   font-weight: 500;
