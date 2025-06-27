@@ -117,9 +117,20 @@
                   justify-content: space-between;
                 }
                 .banner-text {
-                  margin: 70px 80px 0 8.33vw;
+                  margin: 4.375rem 5rem 0 8.33vw;
                   width: 23%;
                   flex-shrink: 0;
+                }
+                @media screen and (min-width: 1408px) and (max-width: 1899px) {
+                  .banner-text {
+                    margin: 3.125rem 3.625rem 0 8.33vw;
+                  }
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1407px) {
+                  .banner-text {
+                    width: calc(33.3vw - 2.5rem);
+                    margin: 2rem 1rem 0 1.5rem;
+                  }
                 }
                 .banner-title {
                   font-size: 2rem;
