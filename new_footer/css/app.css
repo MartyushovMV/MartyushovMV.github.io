@@ -291,3 +291,97 @@ footer {
     stroke: #FFEDD6;
   }
 }
+
+/***********************page styles ********************************/
+
+  .announcements {
+    padding: 0 8.33vw;
+    margin-bottom: 5rem;
+    background-color: #e5e9f0;
+  }
+  .announcements-header {
+    padding: 1.625rem 3rem;
+    /*padding: 1.0625rem 3rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFEDD6;
+    border-radius: 1rem;
+  }
+  .announcements-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: #1D1D1F;
+  }
+
+  .link-with-icon {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .affiche-button {
+    background-color: #036;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .affiche-button .link-with-icon p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: #fff;
+  }
+
+  .announcements-slider {
+    padding: 3rem;
+    display: flex;
+    column-gap: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+
+  .announcement-image {
+    width: 22rem;
+    line-height: .75;
+  }
+
+  .announcement-image img {
+    border-radius: 1rem;
+  }
+
+  .announcement-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .announcement-date {
+    margin-bottom: 1.5rem;
+  }
+
+  .announcement-link {
+    color: #036;
+    border-radius: 2rem;
+    border: 1px solid #036;
+    background: none;
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    width: 9.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    .announcement-link:hover {
+      background-color: #036;
+      color: #fff;
+    }
+  }
+
+  .announcements-header .arrow {
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: #fff;
+  }
