@@ -50,7 +50,7 @@ if (document.querySelector('#mainpage-slider')) {
         removeElement(wrapper)
         return
       }
-      wrapper = document.querySelector(".navigation-wrapper")
+      wrapper = createDiv("navigation-wrapper")
       slider.container.parentNode.appendChild(wrapper)
       wrapper.appendChild(slider.container)
     }
