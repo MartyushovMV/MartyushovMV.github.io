@@ -60,13 +60,13 @@ if (document.querySelector('#mainpage-slider')) {
         removeElement(dots)
         return
       }
-      dots = createDiv("dots articles-slider-dots")
+      dots = createDiv("dots mainpage-slider-dots")
       slider.track.details.slides.forEach((_e, idx) => {
         var dot = createDiv("dot")
         dot.addEventListener("click", () => slider.moveToIdx(idx))
         dots.appendChild(dot)
       })
-      dotsPlace = document.querySelector('.mainpage-banner-section')
+      dotsPlace = document.querySelector('.common-wrap')
       dotsPlace.appendChild(dots)
       //wrapper.appendChild(dots)
     }
