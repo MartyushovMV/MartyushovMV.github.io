@@ -275,6 +275,14 @@
                     color: #fff;
                   }
                 }
+
+                @media screen and (max-width: 1023px) {
+                  .banner-link:hover {
+                    background-color: #fff;
+                    color: #036;
+                  }
+                }
+
                 .banner-image {
                   flex-shrink: 1;
                   line-height: .75;
@@ -447,8 +455,10 @@
                   border: 1px solid #E5E9F0;
                   text-align: center;
                 }
-                .banner-menu-item a:hover {
-                  background-color: #27509B;
+                @media screen and (min-width: 1024px) {
+                  .banner-menu-item a:hover {
+                    background-color: #27509B;
+                  }
                 }
                 .banner-menu-item a {
                   display: block;
