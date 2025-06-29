@@ -69,6 +69,7 @@
                   <div id="mainpage-slider" class="keen-slider">
                     <div class="keen-slider__slide number-slide1 mainpage-banner">
                       <div class="banner-text">
+                        <div class="banner-text-info">
                           <p class="banner-title">Инфраструктура</p>
                           <div class="banner-description">
                             <ul>
@@ -78,7 +79,8 @@
                               <li>7 учебных баз.</li>
                             </ul>
                           </div>
-                          <a href="/node/20147" class="banner-link">Подробнее</a>
+                        </div>
+                        <a href="/node/20147" class="banner-link">Подробнее</a>
                       </div>
                        <div class="banner-image">
                          <img src="./images/poster_1.jpg">
@@ -86,11 +88,13 @@
                     </div>
                     <div class="keen-slider__slide number-slide2 mainpage-banner">
                       <div class="banner-text">
+                        <div class="banner-text-info">
                           <p class="banner-title">В Горном идет приемная кампания</p>
                           <div class="banner-description">
                             Поступайте в первый технический вуз страны!
                           </div>
-                          <a href="/node/20147" class="banner-link">Приёмная кампания 2025</a>
+                        </div>
+                        <a href="/node/20147" class="banner-link">Приёмная кампания 2025</a>
                       </div>
                        <div class="banner-image">
                          <img src="./images/poster_2.jpg">
@@ -156,6 +160,14 @@
                     padding: 1.875rem 0 0 1.5rem;
                   }
                 }
+
+                @media screen and (min-width: 769px) and (max-width: 1024px) {
+                  .banner-text-info {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+                }
+
                 @media screen and (min-width: 500px) and (max-width: 1407px) {
                   .banner-title {
                     font-size: 1.5rem;
