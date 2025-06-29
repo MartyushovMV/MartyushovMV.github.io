@@ -80,7 +80,9 @@
                             </ul>
                           </div>
                         </div>
-                        <a href="/node/20147" class="banner-link">Подробнее</a>
+                        <div class="banner-link-wrapper">
+                          <a href="/node/20147" class="banner-link">Подробнее</a>
+                        </div>
                       </div>
                        <div class="banner-image">
                          <img src="./images/poster_1.jpg">
@@ -94,7 +96,9 @@
                             Поступайте в первый технический вуз страны!
                           </div>
                         </div>
-                        <a href="/node/20147" class="banner-link">Приёмная кампания 2025</a>
+                        <div class="banner-link-wrapper">
+                          <a href="/node/20147" class="banner-link">Приёмная кампания 2025</a>
+                        </div>
                       </div>
                        <div class="banner-image">
                          <img src="./images/poster_2.jpg">
@@ -204,9 +208,24 @@
                 .banner-description li + li {
                   margin-top: 1rem;
                 }
-                .banner-link {
-                  display: inline-flex;
+
+                .banner-link-wrapper {
                   margin-top: 2.5rem;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1407px) {
+                  .banner-link-wrapper {
+                    margin-top: 1.5rem;
+                  }
+                }
+                @media screen and (min-width: 769px) and (max-width: 1024px) {
+                  .banner-link-wrapper {
+                    margin-top: 0;
+                  }
+                }
+
+                .banner-link {
+                  /*display: inline-flex;*/
                   color: #036;
                   border-radius: 2rem;
                   border: 1px solid #036;
@@ -216,16 +235,7 @@
                   font-weight: 700;
                   line-height: 120%;
                 }
-                @media screen and (min-width: 1024px) and (max-width: 1407px) {
-                  .banner-link {
-                    margin-top: 1.5rem;
-                  }
-                }
-                @media screen and (min-width: 769px) and (max-width: 1024px) {
-                  .banner-link {
-                    margin-top: 0;
-                  }
-                }
+
                 @media screen and (min-width: 1024px) {
                   .banner-link:hover {
                     background-color: #036;
