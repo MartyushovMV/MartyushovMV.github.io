@@ -127,7 +127,11 @@
                 }
                 .mainpage-banner {
                   display: flex;
-                  justify-content: space-between;
+                }
+                @media screen and (max-width: 1023px) {
+                  .mainpage-banner {
+                    flex-direction: column-reverse;
+                  }
                 }
                 .banner-text {
                   margin: 4.375rem 5rem 0 8.33vw;
