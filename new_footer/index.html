@@ -346,6 +346,33 @@
                 .banner-menu-item a img {
                   margin-bottom: .5rem;
                 }
+                .banner-menu-item a p {
+                  line-height: 140%;
+                }
+
+                @media screen and (max-width: 768px) {
+                  .banner-menu-items {
+                    flex-wrap: wrap;
+                  }
+                  .banner-menu-item {
+                    width: 33.3%;
+                  }
+                  .banner-menu-items > :nth-child(1), .banner-menu-items > :nth-child(2) {
+                    width: 50%;
+                  }
+                }
+
+                @media screen and (min-width: 500px) and (max-width: 768px) {
+                  .banner-menu-item a p {
+                    font-size: .875rem;
+                  }
+                }
+
+                @media screen and (max-width: 499px) {
+                  .banner-menu-item a p {
+                    font-size: .75rem;
+                  }
+                }
               </style>
 
               <div class="announcements">
