@@ -127,20 +127,31 @@
                   display: flex; 
                   justify-content: space-between;
                 }
+
                 .common-wrap {
                   width: 91.67vw;
                 }
+                @media screen and (max-width: 499px) {
+                  .common-wrap {
+                    width: 83.33vw;
+                  }
+                }
+
                 #mainpage-slider {
                   border-radius: 1rem;
                 }
                 .mainpage-banner {
                   display: flex;
                 }
+
                 @media screen and (max-width: 1023px) {
                   .mainpage-banner {
                     flex-direction: column-reverse;
                     justify-content: flex-end;
                   }
+                }
+
+                @media screen and (min-width: 500px) and (max-width: 1023px) {
                   .mainpage-slider-wrapper {
                     width: 91.67vw;
                   }
@@ -151,6 +162,19 @@
                     width: 91.67vw;
                   }
                 }
+
+                @media screen and (max-width: 499px) {
+                  .mainpage-slider-wrapper {
+                    width: 83.33vw;
+                  }
+                  #mainpage-slider {
+                    width: 83.33vw;
+                  }
+                  .mainpage-banner {
+                    width: 83.33vw;
+                  }
+                }
+
                 .banner-text {
                   margin: 4.375rem 5rem 0 8.33vw;
                   width: 23%;
@@ -296,10 +320,18 @@
                   width: 100%;
                   border-radius: 1rem;
                 }
+
                 .banner-flag {
                   width: 8.33vw;
                   display: flex;
                 }
+
+                @media screen and (max-width: 499px) {
+                  .banner-flag {
+                    width: 16.67vw;
+                  }
+                }
+
                 .white-strip-wrapper {
                   height: 100%;
                   width: 33.3%;
